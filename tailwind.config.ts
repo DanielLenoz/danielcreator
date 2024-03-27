@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        tsDM: ['var(--font-work-sans)'],
-        tprimary: ['var(--font-montserrat-alternates)'],
-        tblog: ['var(--font-roboto-mono)'],
+        titleSubtitle: ['var(--font-work-sans)'],
+        textPrimary: ['var(--font-montserrat-alternates)'],
+        textBlog: ['var(--font-roboto-mono)'],
       },
       spacing: {
         '1': '8px',
