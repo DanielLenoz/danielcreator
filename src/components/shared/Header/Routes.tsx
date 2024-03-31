@@ -39,6 +39,7 @@ export const Routes = () => {
         <li>
           <Link
             className="flex items-center gap-1 border-b-2 border-transparent transition ease-in-out hover:border-slate-400  "
+            key={text}
             href={href}
           >
             {icon}

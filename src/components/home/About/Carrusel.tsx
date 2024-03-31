@@ -8,9 +8,47 @@ import 'swiper/css/navigation'
 import Image from 'next/image'
 
 export const Carrusel = () => {
+  const images = [
+    {
+      image: '/assets/images/framework/figma.webp',
+      alt: 'figma',
+    },
+    {
+      image: '/assets/images/framework/nextjs.webp',
+      alt: 'nextjs',
+    },
+    {
+      image: '/assets/images/framework/react.webp',
+      alt: 'react',
+    },
+    {
+      image: '/assets/images/framework/tailwindcss.webp',
+      alt: 'tailwindcss',
+    },
+    {
+      image: '/assets/images/framework/vite.webp',
+      alt: 'vite',
+    },
+    {
+      image: '/assets/images/framework/npm.webp',
+      alt: 'npm',
+    },
+    {
+      image: '/assets/images/framework/html.webp',
+      alt: 'html',
+    },
+    {
+      image: '/assets/images/framework/css.webp',
+      alt: 'css',
+    },
+    {
+      image: '/assets/images/framework/js.webp',
+      alt: 'js',
+    },
+  ]
   return (
     <Swiper
-      spaceBetween={'-44%'}
+      spaceBetween={'-65%'}
       autoHeight={true}
       slidesPerView={'auto'}
       centeredSlides={true}
@@ -21,93 +59,24 @@ export const Carrusel = () => {
       breakpoints={{
         1000: {
           slidesPerView: 1,
-          spaceBetween: '-68%',
+          spaceBetween: '-73%',
         },
       }}
       modules={[Autoplay]}
       className="mySwiper h-auto w-auto"
     >
-      <SwiperSlide className="flex items-center justify-center object-cover ">
-        <Image
-          className=" h-auto w-auto"
-          src="/assets/images/framework/figma.webp"
-          alt="figma"
-          width={270}
-          height={305}
-        />
-      </SwiperSlide>
-      <SwiperSlide className="flex items-center justify-center object-cover">
-        <Image
-          className=" h-auto w-auto"
-          src="/assets/images/framework/nextjs.webp"
-          alt="nextjs"
-          width={270}
-          height={305}
-        />
-      </SwiperSlide>
-      <SwiperSlide className="flex items-center justify-center object-cover">
-        <Image
-          className=" h-auto w-auto"
-          src="/assets/images/framework/react.webp"
-          alt="react"
-          width={270}
-          height={305}
-        />
-      </SwiperSlide>
-      <SwiperSlide className="flex items-center justify-center object-cover">
-        <Image
-          className=" h-auto w-auto"
-          src="/assets/images/framework/tailwindcss.webp"
-          alt="tailwindcss"
-          width={270}
-          height={305}
-        />
-      </SwiperSlide>
-      <SwiperSlide className="flex items-center justify-center object-cover">
-        <Image
-          className=" h-auto w-auto"
-          src="/assets/images/framework/vite.webp"
-          alt="vite"
-          width={270}
-          height={305}
-        />
-      </SwiperSlide>
-      <SwiperSlide className="flex items-center justify-center object-cover">
-        <Image
-          className=" h-auto w-auto"
-          src="/assets/images/framework/npm.webp"
-          alt="npm"
-          width={270}
-          height={305}
-        />
-      </SwiperSlide>
-      <SwiperSlide className="flex items-center justify-center object-cover">
-        <Image
-          className=" h-auto w-auto"
-          src="/assets/images/framework/html.webp"
-          alt="html"
-          width={270}
-          height={305}
-        />
-      </SwiperSlide>
-      <SwiperSlide className="flex items-center justify-center object-cover">
-        <Image
-          className=" h-auto w-auto"
-          src="/assets/images/framework/css.webp"
-          alt="css"
-          width={270}
-          height={305}
-        />
-      </SwiperSlide>
-      <SwiperSlide className="flex items-center justify-center object-cover">
-        <Image
-          className=" h-auto w-auto"
-          src="/assets/images/framework/js.webp"
-          alt="js"
-          width={270}
-          height={305}
-        />
-      </SwiperSlide>
+      {images.map(({ image, alt }) => (
+        <SwiperSlide className="flex items-center justify-center object-cover">
+          <Image
+            className=" h-auto w-auto"
+            key={alt}
+            src={image}
+            alt={alt}
+            width={170}
+            height={305}
+          />
+        </SwiperSlide>
+      ))}
     </Swiper>
   )
 }
