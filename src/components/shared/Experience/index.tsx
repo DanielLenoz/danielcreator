@@ -7,11 +7,11 @@ export const Experience = () => {
       <li>
         <PiBooksFill className="timeline-middle h-5 w-5 fill-segundaryDark" />
         <article className="timeline-start mb-10 grid gap-[4px] md:text-end">
-          <time className="font-textBlog italic">Noviembre 2021</time>
+          <time className="font-textBlog text-base italic">Noviembre 2021</time>
           <h2 className="font-titleSubtitle text-2xl font-semibold">
             Estudio en Platzi
           </h2>
-          <p className=" font-textPrimary font-normal">
+          <p className=" font-textPrimary text-base font-normal">
             Completé cursos en{' '}
             <span className=" text-segundaryDark">
               diferentes áreas de desarrollo web,
@@ -30,11 +30,11 @@ export const Experience = () => {
         <hr className=" bg-segundary" />
         <BsFire className="timeline-middle h-5 w-5 fill-segundaryDark" />
         <article className="timeline-end mb-10 grid gap-[4px]">
-          <time className="font-textBlog italic">Marzo 2023</time>
+          <time className="font-textBlog text-base italic">Marzo 2023</time>
           <h2 className="font-titleSubtitle text-2xl font-semibold">
             FreeLancer
           </h2>
-          <p className="font-textPrimary font-normal">
+          <p className="font-textPrimary text-base font-normal">
             Brindé soluciones web{' '}
             <span className=" text-segundaryDark">
               personalizadas a clientes,
