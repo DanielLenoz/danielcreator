@@ -1,5 +1,4 @@
-'use client'
-import React, { useState } from 'react'
+import { SearcherProps } from '.'
 
 const options = [
   { value: 'Todos' },
@@ -7,13 +6,11 @@ const options = [
   { value: 'Dynamic pages' },
 ]
 
-export const Searcher = () => {
-  const [selectedValue, setSelectedValue] = useState('Todos')
-  const [searchValue, setSearchValue] = useState('')
-
-  console.log(selectedValue)
-  console.log(searchValue)
-
+export const Searcher: React.FC<SearcherProps> = ({
+  setCategories,
+  searchValue,
+  setSearchValue,
+}) => {
   return (
     <section className="mx-auto flex w-full place-content-between items-center overflow-hidden rounded-2xl border-2 border-segundary font-textPrimary text-base font-normal ">
       <input
@@ -27,10 +24,12 @@ export const Searcher = () => {
       />
       <select
         className="mr-2 h-full w-24 border-l-2 border-segundary bg-transparent pl-2 focus-visible:border-none focus-visible:outline-none"
-        onChange={(event) => setSelectedValue(event.target.value)}
+        onChange={(event) =>
+          setCategories(event.target.value.toLocaleLowerCase())
+        }
       >
         {options.map(({ value }) => (
-          <option key={value} value={value} >
+          <option key={value} value={value}>
             {value}
           </option>
         ))}
