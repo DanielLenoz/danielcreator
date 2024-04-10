@@ -18,8 +18,8 @@ export const HomePage = () => {
         width={360}
         height={360}
       />
-      <section className="mygradiente z-10 grid min-h-[400px] max-w-[604px] justify-items-start gap-2 justify-self-end p-2">
-        <p className="mygradiente rounded-lg p-1 font-titleSubtitle text-4xl font-bold">
+      <section className="bg-mygradiente z-10 grid min-h-[400px] max-w-[604px] justify-items-start gap-2 justify-self-end p-2">
+        <p className="bg-mygradiente rounded-lg p-1 font-titleSubtitle text-4xl font-bold">
           Frontend Developer / Designer UI/UX
         </p>
         <p className=" font-titleSubtitle text-5xl font-extrabold">

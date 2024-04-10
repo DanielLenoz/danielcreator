@@ -46,7 +46,7 @@ export const Header = () => {
             quality={100}
           />
           <div className=" h-[2px] bg-slate-400 "></div>
-          <ul className="font-titleSubtitle grid gap-1 text-2xl font-semibold ">
+          <ul className="grid gap-1 font-titleSubtitle text-2xl font-semibold ">
             <Routes />
           </ul>
         </article>

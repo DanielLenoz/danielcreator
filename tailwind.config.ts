@@ -32,6 +32,7 @@ const config: Config = {
         cbBackgraund: '#0A2734',
         primariDark: '#05131A',
         segundaryDark: '#0E3A4D',
+        mygradiente: 'rgba(167, 206, 222, 50%)',
       },
     },
   },

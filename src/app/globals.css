@@ -1,7 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.mygradiente{
-  background-color: rgba(167, 206, 222, 50%);
-}
