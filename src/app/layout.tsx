@@ -6,6 +6,7 @@ import {
 } from 'next/font/google'
 import './globals.css'
 import { Header } from 'app/components/shared/Header'
+import { Footer } from 'app/components/shared/Footer'
 
 export const metadata: Metadata = {
   title: 'DanielCreator',
@@ -52,6 +53,7 @@ export default function RootLayout({
       <body className=" bg-mainBackgraound text-black">
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   )

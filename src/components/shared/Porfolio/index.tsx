@@ -2,7 +2,7 @@ import { Modules } from './Modules'
 
 export const Porfolio = () => {
   return (
-    <section className="grid gap-2">
+    <section className="grid gap-2 pb-3">
       <h1 className=" text-center font-titleSubtitle text-3xl font-semibold">
         My Porfolio
       </h1>

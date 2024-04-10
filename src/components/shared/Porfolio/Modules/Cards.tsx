@@ -15,9 +15,10 @@ export const Cards = ({ projects }: { projects: any[] }) => {
               width={400}
               height={300}
               alt={projects?.title}
+              quality={100}
             />
 
-            <article className=" bg-mygradiente absolute grid max-w-80 gap-2 rounded-2xl p-2">
+            <article className=" absolute grid max-w-80 gap-2 rounded-2xl bg-mygradiente p-2">
               <p className=" text-center font-titleSubtitle text-2xl font-semibold">
                 {projects.title}
               </p>
@@ -34,20 +35,20 @@ export const Cards = ({ projects }: { projects: any[] }) => {
               <div className="group absolute -bottom-[10px] -left-[10px] grid items-center justify-items-center">
                 <Link
                   href={projects.Links?.github}
-                  className=" bg-mygradiente z-10 grid h-9 w-9 items-center justify-center  rounded-full"
+                  className=" z-10 grid h-9 w-9 items-center justify-center rounded-full  bg-mygradiente"
                 >
                   <RiGithubFill className="h-6 w-6 fill-segundaryDark" />
                 </Link>
-                <div className=" group-hover:bg-mygradiente absolute h-24 w-24 rounded-full group-hover:animate-pulse "></div>
+                <div className=" absolute h-24 w-24 rounded-full group-hover:animate-pulse group-hover:bg-mygradiente "></div>
               </div>
               <div className="group absolute -bottom-[10px] -right-[10px] grid items-center justify-items-center">
                 <Link
                   href={projects.Links?.website}
-                  className=" bg-mygradiente z-10 grid h-9 w-9 items-center justify-center  rounded-full"
+                  className=" z-10 grid h-9 w-9 items-center justify-center rounded-full  bg-mygradiente"
                 >
                   <CiGlobe className="h-6 w-6 fill-segundaryDark" />
                 </Link>
-                <div className=" group-hover:bg-mygradiente absolute h-24 w-24 rounded-full group-hover:animate-pulse"></div>
+                <div className=" absolute h-24 w-24 rounded-full group-hover:animate-pulse group-hover:bg-mygradiente"></div>
               </div>
             </article>
           </section>

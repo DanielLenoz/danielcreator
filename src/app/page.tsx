@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <HomePage />
-      <section className="grid gap-2 px-2 md:px-32">
+      <section className="grid gap-3 px-2 md:px-32">
         <About />
         <Experience />
         <Porfolio />
