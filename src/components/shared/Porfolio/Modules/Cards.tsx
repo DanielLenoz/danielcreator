@@ -18,7 +18,7 @@ export const Cards = ({ projects }: { projects: any[] }) => {
               quality={100}
             />
 
-            <article className=" absolute grid max-w-80 gap-2 rounded-2xl bg-mygradiente p-2">
+            <article className=" absolute grid max-w-60 sm:max-w-80 gap-2 rounded-2xl bg-mygradiente p-2">
               <p className=" text-center font-titleSubtitle text-2xl font-semibold">
                 {projects.title}
               </p>

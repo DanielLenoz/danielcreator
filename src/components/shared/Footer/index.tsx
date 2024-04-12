@@ -52,7 +52,7 @@ export const Footer = () => {
         <nav className="flex flex-col gap-1">
           <h6 className="font-titleSubtitle text-2xl font-semibold">Legal</h6>
           <a className="link-hover font-textPrimary text-base font-medium">
-            Terminos de huso
+            Terminos de uso
           </a>
           <a className="link-hover font-textPrimary text-base font-medium">
             Contratos
