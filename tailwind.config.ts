@@ -29,6 +29,7 @@ const config: Config = {
         footerBlack: '#191A1A',
         mainBackgraound: '#F5F5F5',
         segundary: '#99BAC7',
+        tertiary: '#3C7C98',
         cbBackgraund: '#0A2734',
         primariDark: '#05131A',
         segundaryDark: '#0E3A4D',

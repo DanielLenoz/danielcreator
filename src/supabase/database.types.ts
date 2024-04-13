@@ -6,7 +6,7 @@ export interface DataType {
   hastag?: string[] // Optional for flexibility
   content?: string // Optional for flexibility (might not be present in Certificates)
   img?: Img // Optional for flexibility (might not be present in Certificates)
-  imgFrameworks?: ImgFramework // Specific to Projects
+  imgFrameworks?: ImgFramework[] // Specific to Projects
   links?: Links // Specific to Projects
   certificateImgs?: Img[] // Specific to Certificates (renamed for clarity)
   description?: string // Specific to Blogs
@@ -18,10 +18,7 @@ export interface Img {
 }
 
 export interface ImgFramework {
-  react?: string
-  js?: string
-  css?: string
-  git?: string
+  img: string
 }
 
 export interface Links {

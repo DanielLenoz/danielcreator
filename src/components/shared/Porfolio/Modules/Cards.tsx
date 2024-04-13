@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { CiGlobe } from 'react-icons/ci'
 import { RiGithubFill } from 'react-icons/ri'
 
-export const Cards = ({ projects }: { projects: any[] }) => {
+export const Cards = ({ projects }: { projects: any[] | null }) => {
   return (
     <section className="flex flex-wrap justify-center gap-2">
       {projects?.map((projects) => {
@@ -18,14 +18,14 @@ export const Cards = ({ projects }: { projects: any[] }) => {
               quality={100}
             />
 
-            <article className=" absolute grid max-w-60 sm:max-w-80 gap-2 rounded-2xl bg-mygradiente p-2">
+            <article className=" absolute grid max-w-60 gap-2 rounded-2xl bg-mygradiente p-2 sm:max-w-80">
               <p className=" text-center font-titleSubtitle text-2xl font-semibold">
                 {projects.title}
               </p>
               <button>
                 <Link
-                  className="rounded-2xl bg-segundaryDark px-2 py-[4px] text-center font-textPrimary text-base font-medium text-white"
-                  href={`/${projects.title}`}
+                  className="hover:bg-tertiary rounded-lg bg-segundaryDark px-2 py-1 text-center font-textPrimary text-base font-medium text-white"
+                  href={`/Projects/${projects.id}`}
                 >
                   Mas Información
                 </Link>

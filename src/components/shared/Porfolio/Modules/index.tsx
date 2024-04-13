@@ -23,8 +23,6 @@ export const Modules = () => {
         .from('Projects')
         .select('*')
 
-      console.log(Projects)
-
       if (Projects) {
         // Filtra los datos según categories y searchValue
         const filtered = Projects.filter((project) => {
@@ -49,6 +47,8 @@ export const Modules = () => {
 
     filterProjects()
   }, [categories, searchValue, categories])
+
+  console.log(filteredProjects)
 
   return (
     <>
