@@ -12,22 +12,22 @@ export const Routes = () => {
       text: 'Home',
     },
     {
-      href: '/servicios',
+      href: '/Servicios',
       icon: <RiShakeHandsFill />,
       text: 'Servicios',
     },
     {
-      href: '/certificados',
+      href: '/Certificados',
       icon: <RiVerifiedBadgeFill />,
       text: 'Certificados',
     },
     {
-      href: '/blog',
+      href: '/Blog',
       icon: <MdLibraryBooks />,
       text: 'Blog',
     },
     {
-      href: '/contact',
+      href: '/Contact',
       icon: <PiShareNetworkFill />,
       text: 'Redes/Contact',
     },

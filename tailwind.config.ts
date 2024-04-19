@@ -11,7 +11,7 @@ const config: Config = {
       fontFamily: {
         titleSubtitle: ['var(--font-work-sans)'],
         textPrimary: ['var(--font-montserrat-alternates)'],
-        textBlog: ['var(--font-roboto-mono)'],
+        textSegundary: ['var(--font-roboto-mono)'],
       },
       spacing: {
         '1': '8px',

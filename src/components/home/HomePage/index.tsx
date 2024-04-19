@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const HomePage = () => {
   return (
-    <section className="relative grid max-h-[525px] overflow-hidden">
+    <section className="relative grid max-h-[525px] overflow-hidden bg-gradient-to-b from-cyan-400 to-neutral-100">
       <Image
         className="absolute top-0 md:-top-12"
         src="/assets/images/person/Earth.webp"
@@ -30,7 +30,7 @@ export const HomePage = () => {
         </p>
         <button>
           <Link
-            className="hover:bg-tertiary inline-block rounded-lg bg-segundaryDark px-2 py-1  font-textPrimary text-base font-medium text-white"
+            className="inline-block rounded-lg bg-segundaryDark px-2 py-1 font-textPrimary  text-base font-medium text-white hover:bg-tertiary"
             href={'/contacto'}
           >
             Contacto
