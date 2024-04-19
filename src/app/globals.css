@@ -5,3 +5,6 @@
 strong {
     color: #0E3A4D;
 }
+.rotate-y-180 {
+    transform: rotateY(180deg);
+}

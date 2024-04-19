@@ -11,6 +11,14 @@ export const HomePages = () => {
         alt={'mundo'}
         quality={100}
       />
+      <Image
+        className=" hidden md:block rotate-y-180 absolute right-0 top-0"
+        src={'/assets/images/services/imagebg.webp'}
+        width={300}
+        height={530}
+        alt={'mundo'}
+        quality={100}
+      />
       <article className="z-10 flex max-w-3xl flex-col gap-2 justify-self-center px-2 text-center md:px-32">
         <h1 className=" rounded-lg bg-mygradiente p-1 font-titleSubtitle text-3xl font-semibold">
           Crea tu Huella Digital o vuelve Digital tu Negocio
