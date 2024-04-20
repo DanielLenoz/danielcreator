@@ -1,0 +1,12 @@
+.swiper-button-prev,
+.swiper-button-next{
+    color: #99BAC7;
+}
+.swiper-pagination{
+    bottom: 1px;
+}
+@media ( width <= 1000px){
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
+    }
+}

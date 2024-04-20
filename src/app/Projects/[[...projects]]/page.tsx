@@ -14,16 +14,9 @@ interface Projects {
 
 export default async function Projects(props: Projects) {
   const { projects } = props.params
-  // console.log(projects)
-
-  // console.log(props)
   let { data: Projects, error } = await supabase.from('Projects').select('*')
 
-  // console.log(Projects)
-
   const filterProjects = Projects?.filter((data) => data.id == projects)
-
-  console.log(filterProjects)
 
   return (
     <main className="grid gap-3 px-2 pb-2 md:px-32">
@@ -70,7 +63,7 @@ export default async function Projects(props: Projects) {
             <section className="grid gap-1 font-textPrimary text-base font-normal">
               <MDXRemote source={project.content} />
             </section>
-            <article className="font-textSegundary flex justify-between text-base font-medium text-segundaryDark">
+            <article className="flex justify-between font-textSegundary text-base font-medium text-segundaryDark">
               <p>{project.hastag}</p>
               <p>{project.created_at}</p>
             </article>

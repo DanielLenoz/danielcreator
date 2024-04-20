@@ -48,8 +48,6 @@ export const Modules = () => {
     filterProjects()
   }, [categories, searchValue, categories])
 
-  console.log(filteredProjects)
-
   return (
     <>
       <Searcher
