@@ -24,7 +24,7 @@ export const Cards = ({ projects }: { projects: any[] | null }) => {
               </p>
               <button>
                 <Link
-                  className="hover:bg-tertiary rounded-lg bg-segundaryDark px-2 py-1 text-center font-textPrimary text-base font-medium text-white"
+                  className="rounded-lg bg-segundaryDark px-2 py-1 text-center font-textPrimary text-base font-medium text-white hover:bg-tertiary"
                   href={`/Projects/${projects.id}`}
                 >
                   Mas Información

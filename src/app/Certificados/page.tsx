@@ -1,5 +1,5 @@
-import { CertificateSections } from 'app/components/certificados/CertificateSections'
 import { supabase } from 'app/supabase/client'
+import { CertificateSections } from 'app/components/certificados/CertificateSections'
 
 export default async function Home() {
   let { data: Certificates, error } = await supabase

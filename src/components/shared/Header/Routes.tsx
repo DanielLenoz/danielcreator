@@ -22,9 +22,9 @@ export const Routes = () => {
       text: 'Certificados',
     },
     {
-      href: '/Blog',
+      href: '/Blogs',
       icon: <MdLibraryBooks />,
-      text: 'Blog',
+      text: 'Blogs',
     },
     {
       href: '/Contact',

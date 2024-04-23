@@ -34,10 +34,10 @@ export const ContentPages = () => {
             procesos claves del producto, haciendo que puedas ver informacion
             clave del producto
           </p>
-          <button className="font-textSegundary inline-block rounded-lg bg-cyan-700 px-2 py-1 text-base font-medium text-white">
+          <button className="inline-block rounded-lg bg-cyan-700 px-2 py-1 font-textSegundary text-base font-medium text-white hover:bg-tertiary">
             <Link href={''}>Contrato de Landing Pages</Link>
           </button>
-          <button className="font-textSegundary inline-block rounded-lg bg-cyan-900 px-2 py-1 text-base font-medium text-white">
+          <button className="inline-block rounded-lg bg-cyan-900 px-2 py-1 font-textSegundary text-base font-medium text-white hover:bg-tertiary">
             <Link href={''}>Contrato de Pagina Web Dinamica</Link>
           </button>
         </section>

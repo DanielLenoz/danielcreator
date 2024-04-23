@@ -46,7 +46,7 @@ export const Modules = () => {
     }
 
     filterProjects()
-  }, [categories, searchValue, categories])
+  }, [categories, searchValue])
 
   return (
     <>

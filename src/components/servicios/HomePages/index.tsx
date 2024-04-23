@@ -12,7 +12,7 @@ export const HomePages = () => {
         quality={100}
       />
       <Image
-        className=" hidden md:block rotate-y-180 absolute right-0 top-0"
+        className=" rotate-y-180 absolute right-0 top-0 hidden md:block"
         src={'/assets/images/services/imagebg.webp'}
         width={300}
         height={530}
