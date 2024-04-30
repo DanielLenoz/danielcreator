@@ -27,7 +27,7 @@ export const Cards = ({ Blogs }: { Blogs: any[] | null }) => {
                 {blog.description}
               </p>
               <article className=" flex justify-between font-textSegundary text-base font-medium text-segundaryDark">
-                <Link href={blog.title}>Leer mas</Link>
+                <Link href={`/Blogs/${blog.id}`}>Leer mas</Link>
                 <p>{blog.created_at}</p>
               </article>
             </article>

@@ -55,6 +55,7 @@ export const HomePage = () => {
                 alt={blog.title}
                 width={1440}
                 height={589}
+                quality={100}
               />
               <Image
                 className="hidden max-h-[589px] object-cover sm:block"
@@ -63,13 +64,14 @@ export const HomePage = () => {
                 alt={blog.title}
                 width={1440}
                 height={589}
+                quality={100}
               />
               <article className=" absolute z-10 grid justify-items-center gap-5">
                 <h1 className="  rounded-lg px-2 text-center font-titleSubtitle text-3xl font-extrabold uppercase italic text-white shadow-2xl shadow-segundaryDark drop-shadow-2xl  sm:text-5xl ">
                   {blog.title}
                 </h1>
                 <button className=" rounded-2xl bg-segundaryDark px-4 py-1 font-textSegundary text-base font-medium text-white hover:bg-tertiary">
-                  <Link href={`/Blogs/${blog.title}`}>Leer mas</Link>
+                  <Link href={`/Blogs/${blog.id}`}>Leer mas</Link>
                 </button>
               </article>
             </article>
