@@ -60,7 +60,7 @@ export const Contacto = () => {
         }
       />
       <textarea
-        className=" min-h-8 rounded-lg border-b-2  border-segundaryDark bg-transparent px-1  focus-visible:outline-none"
+        className=" min-h-28 rounded-lg border-b-2  border-segundaryDark bg-transparent px-1  focus-visible:outline-none"
         placeholder="Que me quieres decir "
         name="message"
         value={formData.message}
