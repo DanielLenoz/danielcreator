@@ -4,7 +4,7 @@ import { MdLibraryBooks } from 'react-icons/md'
 import { PiShareNetworkFill } from 'react-icons/pi'
 import { RiShakeHandsFill, RiVerifiedBadgeFill } from 'react-icons/ri'
 
-export const Routes = () => {
+export const Routes = ({ setVisibleLeft }: any) => {
   const navLinks = [
     {
       href: '/',
@@ -38,9 +38,10 @@ export const Routes = () => {
       {navLinks.map(({ href, icon, text }) => (
         <li>
           <Link
-            className="flex items-center gap-1 border-b-2 border-transparent transition ease-in-out hover:border-slate-400  "
+            className="flex items-center gap-1 border-b-2 border-transparent transition ease-in-out hover:border-slate-400"
             key={text}
             href={href}
+            onClick={() => setVisibleLeft(false)}
           >
             {icon}
             {text}

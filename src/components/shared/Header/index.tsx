@@ -1,24 +1,24 @@
+'use client'
 import Image from 'next/image'
+import React, { useState } from 'react'
 import { RiMenuLine, RiMoonFill, RiSunFill } from 'react-icons/ri'
+import { Sidebar } from 'primereact/sidebar'
 import { Routes } from './Routes'
+import './style.model.css'
 
 export const Header = () => {
+  const [visibleLeft, setVisibleLeft] = useState<boolean>(false)
   return (
-    <header className="drawer">
-      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-      {/* Navbar */}
-      <nav className="drawer-content flex  max-h-8 min-h-8 place-content-between items-center px-2 ">
-        <label
-          htmlFor="my-drawer-3"
-          aria-label="open sidebar"
-          className="btn btn-square btn-ghost"
-        >
-          <RiMenuLine className="h-6 w-6 fill-slate-950 stroke-1" />
-        </label>
+    <>
+      <header className="flex max-h-8 min-h-8 place-content-between items-center px-2">
+        <RiMenuLine
+          className=" h-6 w-6 cursor-pointer fill-slate-950 stroke-1"
+          onClick={() => setVisibleLeft(true)}
+        />
         <Image
-          className="h-full w-full pt-1"
+          className=" pt-1"
           src="/assets/icons/logo-black.svg"
-          width={100}
+          width={150}
           height={100}
           alt="Logo de la empresa"
           quality={100}
@@ -28,29 +28,27 @@ export const Header = () => {
           <RiSunFill className="swap-on h-6 w-6 fill-current" />
           <RiMoonFill className="swap-off h-6 w-6 fill-current" />
         </label>
-      </nav>
-      {/* Drawer */}
-      <aside className="drawer-side z-20">
-        <label
-          htmlFor="my-drawer-3"
-          aria-label="close sidebar"
-          className="drawer-overlay"
-        ></label>
-        <article className="flex min-h-full w-64 flex-col bg-mainBackgraound px-2 ">
-          <Image
-            className="w-2/3 self-center pt-1"
-            src="/assets/icons/logo-black.svg"
-            width={100}
-            height={100}
-            alt="Logo de la empresa"
-            quality={100}
-          />
-          <div className=" h-[2px] bg-slate-400 "></div>
-          <ul className="grid gap-1 font-titleSubtitle text-2xl font-semibold ">
-            <Routes />
-          </ul>
-        </article>
-      </aside>
-    </header>
+      </header>
+
+      <Sidebar
+        visible={visibleLeft}
+        position="left"
+        onHide={() => setVisibleLeft(false)}
+        className=" grid min-h-full w-64 flex-col bg-mainBackgraound px-2"
+      >
+        <Image
+          className=" mx-auto w-4/5 self-center pt-1"
+          src="/assets/icons/logo-black.svg"
+          width={200}
+          height={200}
+          alt="Logo de la empresa"
+          quality={100}
+        />
+        <div className=" mb-2 h-[2px] bg-slate-400"></div>
+        <ul className="grid gap-1 font-titleSubtitle text-2xl font-semibold ">
+          <Routes setVisibleLeft={setVisibleLeft} />
+        </ul>
+      </Sidebar>
+    </>
   )
 }
