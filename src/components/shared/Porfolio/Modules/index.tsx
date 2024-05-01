@@ -12,7 +12,7 @@ export interface SearcherProps {
 }
 
 export const Modules = () => {
-  const [categories, setCategories] = useState<string>('Todos')
+  const [categories, setCategories] = useState<string>('todos')
   const [searchValue, setSearchValue] = useState<string>('')
   const [filteredProjects, setFilteredProjects] = useState<DataType[]>([])
 
@@ -29,7 +29,7 @@ export const Modules = () => {
           const titleLower = project.title?.toLowerCase() || ''
           const category = project.category?.toLowerCase() || ''
 
-          if (categories === 'Todos') {
+          if (categories === 'todos') {
             return (
               titleLower.includes(searchValue) || category.includes(categories)
             )

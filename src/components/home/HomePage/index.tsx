@@ -31,7 +31,7 @@ export const HomePage = () => {
         <button>
           <Link
             className="inline-block rounded-lg bg-segundaryDark px-2 py-1 font-textPrimary  text-base font-medium text-white hover:bg-tertiary md:text-lg"
-            href={'/contacto'}
+            href={'/Contact'}
           >
             Contacto
           </Link>
