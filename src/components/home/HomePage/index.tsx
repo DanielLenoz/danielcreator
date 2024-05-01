@@ -26,7 +26,7 @@ export const HomePage = () => {
           Daniel Rodriguez
         </p>
         <p className=" font-textSegundary text-base font-medium md:text-lg">
-          Creacion de paginas web com plememntaicon UI/UX
+          Creación de páginas web con implementación de UI/UX.
         </p>
         <button>
           <Link

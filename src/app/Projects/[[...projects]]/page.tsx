@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { supabase } from 'app/supabase/client'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { RiGithubFill } from 'react-icons/ri'
 import { CiGlobe } from 'react-icons/ci'
 import { Cards } from 'app/components/shared/Porfolio/Modules/Cards'
+import { Modules } from 'app/components/shared/Porfolio/Modules'
 
 interface Projects {
   params: {
@@ -69,33 +69,37 @@ export default async function Projects(props: Projects) {
             </article>
 
             <article className="flex flex-wrap gap-1 font-textPrimary text-base font-medium md:text-lg ">
+              <a href="http://"></a>
               <button className=" rounded-2xl bg-segundaryDark px-2 py-1 hover:bg-tertiary">
-                <Link
-                  href={project.Links.github}
+                <a
                   className="flex items-center text-white"
+                  href={project.Links.github}
+                  target="_blank"
                 >
                   <RiGithubFill className="mr-1 h-6 w-6 fill-white" />
                   Repositorio
-                </Link>
+                </a>
               </button>
               <button className="rounded-2xl bg-segundaryDark px-2 py-1">
-                <Link
-                  href={project.Links.website}
+                <a
                   className="flex items-center text-white"
+                  href={project.Links.website}
+                  target="_blank"
                 >
                   <CiGlobe className="mr-1 h-6 w-6 fill-white" />
                   Pagina web
-                </Link>
+                </a>
               </button>
             </article>
           </>
         )
       })}
-      <section>
-        <h1 className=" py-2 text-center font-titleSubtitle text-2xl font-semibold md:text-3xl">
-          Ultimos Trabajos
+      <section className="grid gap-3">
+        <h1 className="pt-2 text-center font-titleSubtitle text-2xl font-semibold md:text-3xl">
+          Continúa explorando más de mis trabajos
         </h1>
-        <Cards projects={Projects} />
+        <Modules />
+        {/* <Cards projects={Projects} /> */}
       </section>
     </main>
   )

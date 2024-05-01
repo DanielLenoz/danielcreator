@@ -33,21 +33,23 @@ export const Cards = ({ projects }: { projects: any[] | null }) => {
             </article>
             <article>
               <div className="group absolute -bottom-[10px] -left-[10px] grid items-center justify-items-center">
-                <Link
-                  href={projects.Links?.github}
+                <a
                   className=" z-10 grid h-9 w-9 items-center justify-center rounded-full  bg-mygradiente"
+                  href={projects.Links?.github}
+                  target="_blank"
                 >
                   <RiGithubFill className="h-6 w-6 fill-segundaryDark" />
-                </Link>
+                </a>
                 <div className=" absolute h-24 w-24 rounded-full group-hover:animate-pulse group-hover:bg-mygradiente "></div>
               </div>
               <div className="group absolute -bottom-[10px] -right-[10px] grid items-center justify-items-center">
-                <Link
-                  href={projects.Links?.website}
+                <a
                   className=" z-10 grid h-9 w-9 items-center justify-center rounded-full  bg-mygradiente"
+                  href={projects.Links?.website}
+                  target="_blank"
                 >
                   <CiGlobe className="h-6 w-6 fill-segundaryDark" />
-                </Link>
+                </a>
                 <div className=" absolute h-24 w-24 rounded-full group-hover:animate-pulse group-hover:bg-mygradiente"></div>
               </div>
             </article>

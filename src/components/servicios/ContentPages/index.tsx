@@ -7,38 +7,38 @@ export const ContentPages = () => {
       <article className="flex flex-col items-center gap-2 xl:flex-row">
         <section className="grid justify-items-start gap-2">
           <h2 className="justify-self-center font-titleSubtitle text-3xl font-semibold md:text-4xl">
-            Negociacion
+            Negociación
           </h2>
           <p className=" font-textPrimary text-base font-normal md:text-lg">
-            entendemos que cada negocio es unico, por eso dedicamos a{' '}
+            Entendemos que cada negocio es único, por eso nos dedicamos a{' '}
             <span className=" text-segundaryDark">
-              crear paginas web personalizadas que reflejen a la persona o
-              empresa dedicada
+              crear páginas web personalizadas que reflejen la identidad de la
+              persona o empresa.
             </span>{' '}
-            <br /> antes de comenzar cualquier proyecto, realizamos una{' '}
+            <br /> Antes de comenzar cualquier proyecto, realizamos una{' '}
             <span className=" text-segundaryDark">
               investigación exhaustiva.
             </span>{' '}
-            nos tomamos el tiempo de conocer a nuestros clientes,{' '}
+            Nos tomamos el tiempo de conocer a nuestros clientes,{' '}
             <span className=" text-segundaryDark">
-              entender sus necesidades y estudiar su objetivo.{' '}
+              entender sus necesidades y estudiar sus objetivos.{' '}
             </span>{' '}
-            este enfoque nos permite crear un diseño web que no solo sea
-            estéticamente agradable, sino que tambien funcione para tu negocio.
+            Este enfoque nos permite crear un diseño web que no solo sea
+            estéticamente agradable, sino que también funcione para tu negocio.
             <br />
-            creemos en la{' '}
+            Creemos en la{' '}
             <span className=" text-segundaryDark">
-              negociación justa y transparente,
+              negociación justa y transparente.
             </span>{' '}
-            nuestro objetivo es proporcionar un servicio optimizamos en los
-            procesos claves del producto, haciendo que puedas ver informacion
-            clave del producto
+            Nuestro objetivo es proporcionar un servicio optimizado en los
+            procesos clave del producto, permitiéndote ver información relevante
+            sobre el mismo.
           </p>
           <button className="inline-block rounded-lg bg-cyan-700 px-2 py-1 font-textSegundary text-base font-medium text-white hover:bg-tertiary md:text-lg">
-            <Link href={''}>Contrato de Landing Pages</Link>
+            <Link href={''}>Contrato para Landing Pages</Link>
           </button>
           <button className="inline-block rounded-lg bg-cyan-900 px-2 py-1 font-textSegundary text-base font-medium text-white hover:bg-tertiary md:text-lg">
-            <Link href={''}>Contrato de Pagina Web Dinamica</Link>
+            <Link href={''}>Contrato para Pagina Web Dinamica</Link>
           </button>
         </section>
         <Image
@@ -56,15 +56,17 @@ export const ContentPages = () => {
             Diseño
           </h2>
           <p className=" font-textPrimary text-base font-normal md:text-lg">
-            cada sitio web es unico e inigualable como las personas o empresa
-            que confían en nosotros para crear su sitio web{' '}
+            Cada sitio web es único e inigualable, al igual que las personas o
+            empresas que confían en nosotros para crear su sitio web{' '}
             <span className=" text-segundaryDark">
-              personalizado que refleje sus caracteristicas y personalidad
+              personalizado. Nuestro objetivo es reflejar sus características y
+              personalidad.
             </span>{' '}
-            con la investigación que hacemos de nuestros usuarios logramos
-            entender sus necesidades, gustos y habilidades, dándonos la
-            informacion necesaria para implementarla en un diseño unico,
-            atractivo y facil de usar cuando llegue su momento de despliegue
+            A través de la investigación que realizamos con nuestros usuarios,
+            logramos entender sus necesidades, gustos y habilidades. Esta
+            información nos permite implementar un diseño único, atractivo y
+            fácil de usar que estará listo para su despliegue cuando llegue el
+            momento.
           </p>
         </section>
         <Image
@@ -82,22 +84,23 @@ export const ContentPages = () => {
             Desarrollo
           </h2>
           <p className=" font-textPrimary text-base font-normal md:text-lg">
-            cuando tenemos el diseño deseado comenzamos la parte de desarrollo,
-            donde nosotros crearemos codigo limpio y{' '}
+            Una vez que tenemos el diseño deseado, comenzamos la fase de
+            desarrollo. En esta etapa, creamos código limpio y{' '}
             <span className=" text-segundaryDark">
-              confiable para el usuario
+              confiable para el usuario,
             </span>{' '}
-            dando siempre las mejores practicas para asegurar que el{' '}
+            siguiendo siempre las mejores prácticas. Nuestro objetivo es
+            asegurar que el{' '}
             <span className=" text-segundaryDark">
-              sitio web sea lo mas rapida, segura y confiable
+              sitio web sea rápido, seguro y confiable.
             </span>
-            <br /> no lanzamos nada hasta que este probado a fondo, desde hacer
-            el producto responsive para todos dispositivos, navegable por todo
-            los navegadores conocidos y{' '}
+            <br /> No lanzamos nada hasta que esté probado a fondo. Esto incluye
+            hacer que el producto sea responsive para todos los dispositivos,
+            navegable en todos los navegadores conocidos y que{' '}
             <span className=" text-segundaryDark">
-              cumpliendo todas las funcionalidades
+              cumpla con todas las funcionalidades
             </span>{' '}
-            anteriormente definidas
+            previamente definidas.
           </p>
         </section>
         <Image
@@ -115,28 +118,28 @@ export const ContentPages = () => {
             Lanzamiento
           </h2>
           <p className=" font-textPrimary text-base font-normal  md:text-lg">
-            antes de lanzar el sitio web al mercado hacemos principal un chequeo
-            de funcionalidades y objetivos concordados, hacemos la{' '}
+            Antes de lanzar el sitio web al mercado, realizamos un chequeo
+            exhaustivo de las funcionalidades y objetivos acordados. Durante la{' '}
             <span className=" text-segundaryDark">
-              fase de preproducción con usuarios y con los stakeholders o
-              simplemente con la cliente,
+              fase de preproducción, trabajamos con usuarios y stakeholders, o
+              simplemente con el cliente,
             </span>{' '}
-            con el fin de que todas las funcionalidades deseados por el cliente
-            sea las mas optimas y satisfactorias posible <br />
+            para asegurarnos de que todas las funcionalidades deseadas sean
+            óptimas y satisfactorias. <br />
             <span className=" text-segundaryDark">
-              se mantiene el seguimiento de la pagina web
+              Mantenemos un seguimiento constante del sitio web
             </span>{' '}
-            por determinado tiempo para asegurar la usabilidad y la{' '}
+            durante un período determinado para garantizar su usabilidad y{' '}
             <span className=" text-segundaryDark">
-              calidad de la misma a lo largo del tiempo
+              calidad a lo largo del tiempo.
             </span>{' '}
             <br />
-            dependiendo del sitio web y con las condiciones a cordadas en la
-            negociaciones iniciales puedes{' '}
+            Dependiendo del sitio web y las condiciones acordadas en las
+            negociaciones iniciales,{' '}
             <span className=" text-segundaryDark">
-              adquirir el codigo y el diseño
+              también puedes adquirir el código y el diseño
             </span>{' '}
-            para tu propio equipo de desarrollo
+            para tu propio equipo de desarrollo.
           </p>
         </section>
         <Image

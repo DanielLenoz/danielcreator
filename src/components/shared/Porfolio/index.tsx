@@ -7,8 +7,9 @@ export const Porfolio = () => {
         My Porfolio
       </h1>
       <p className="text-center font-textPrimary text-base font-normal md:text-lg">
-        cada proyecto tiene su huella digital por el cliente haciendo que cada
-        trabajo tenga su historia y identidad de quien es y de que quieres ser
+        Cada proyecto deja su huella digital, ya que es moldeado por el cliente.
+        Esto hace que cada trabajo tenga su propia historia e identidad,
+        reflejando quiénes somos y lo que aspiramos ser.
       </p>
       <Modules />
     </section>

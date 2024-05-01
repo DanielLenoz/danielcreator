@@ -24,7 +24,7 @@ export const Experience = () => {
               </span>{' '}
               incluyendo frameworks como{' '}
               <span className=" text-segundaryDark">
-                React y Next.js, diseño UX/UI y metodologías ágiles.
+                React y Next.js, Diseño UX/UI y Metodologías ágiles.
               </span>{' '}
               Agradezco a Platzi por la oportunidad de adquirir nuevas
               habilidades y por la comunidad de aprendizaje que ofrece.
@@ -47,7 +47,7 @@ export const Experience = () => {
               <span className=" text-segundaryDark">
                 personalizadas a clientes,
               </span>{' '}
-              desde sitios web informativos hasta aplicaciones web completas. Me
+              desde sitios web informativos hasta sitios web completas. Me
               especialicé en la{' '}
               <span className=" text-segundaryDark">
                 creación de interfaces intuitivas y fáciles de usar,

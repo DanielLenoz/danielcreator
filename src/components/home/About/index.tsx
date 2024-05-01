@@ -5,19 +5,20 @@ export const About = () => {
     <section className=" grid gap-2 pt-5 md:grid-cols-2 ">
       <article className=" grid gap-1">
         <h1 className=" font-titleSubtitle text-3xl font-semibold md:text-4xl">
-          Hola Soy Daniel Rodríguez Desarrollador
+          Hola, soy Daniel Rodríguez, desarrollador
         </h1>
         <p className=" font-textSegundary text-base font-medium md:text-lg">
-          Cada producto tiene su historia y su sueño
+          Cada producto tiene su propia historia y su propio sueño.
         </p>
         <p className=" font-textPrimary text-base font-normal md:text-lg">
           Soy un <span className=" text-segundaryDark">apasionado</span> de la
-          creacion de paginas web, cada producto creado es un usuario con una
-          meta clara,{' '}
+          creación de páginas web. Cada producto creado representa un usuario
+          con una meta clara.{' '}
           <span className=" text-segundaryDark">
-            mi trabajo es darles la oportunidad
+            Mi trabajo es brindarles la oportunidad
           </span>{' '}
-          de digitalizar sus negocios o perfil profesional para que tenga una{' '}
+          de digitalizar sus negocios o perfiles profesionales para que tengan
+          una{' '}
           <span className=" text-segundaryDark">
             huella digital profesional
           </span>

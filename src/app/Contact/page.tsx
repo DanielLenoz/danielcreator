@@ -11,17 +11,27 @@ export default function Contact() {
             Contáctame
           </h1>
           <p className=" z-10 font-textPrimary text-base  font-normal md:text-lg">
-            si te encanto algunos de mis portafolios y procesos de trabajo en
-            paginas web, contáctame si quieres trabajar con migo o si quieres
-            crear una huella digital con tu propia pagina web.
+            Si te encantaron algunos de mis portafolios y procesos de trabajo en
+            páginas web, contáctame si deseas trabajar conmigo o si quieres
+            crear una huella digital con tu propia página web.
           </p>
           <p className="z-10 font-textPrimary text-base  font-normal md:text-lg">
-            si quieres saver mas de mi puedes ver mi redes para conocerme mejor
+            Si quieres saber más de mí, puedes visitar mis redes para conocerme
+            mejor.
           </p>
           <article className="z-10 flex flex-wrap gap-2  justify-self-end">
-            <ImDownload2 className=" h-6 w-6 fill-white" />
-            <RiGithubFill className=" h-6 w-6 fill-white" />
-            <RiLinkedinFill className=" h-6 w-6 fill-white" />
+            <a href="/" target="_blank">
+              <ImDownload2 className=" h-6 w-6 fill-white" />
+            </a>
+            <a href="https://github.com/DanielLenoz" target="_blank">
+              <RiGithubFill className=" h-6 w-6 fill-white" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/daniel-steven-rodriguez-verano-417472241/"
+              target="_blank"
+            >
+              <RiLinkedinFill className=" h-6 w-6 fill-white" />
+            </a>
           </article>
           <Image
             className="rotate-y-180 absolute right-0 top-0 hidden md:block"
@@ -34,7 +44,7 @@ export default function Contact() {
         </article>
         <article>
           <h1 className=" font-titleSubtitle text-2xl font-bold  md:text-3xl">
-            Enviame un Correo
+            Envíame un correo.
           </h1>
           <Contacto />
         </article>
