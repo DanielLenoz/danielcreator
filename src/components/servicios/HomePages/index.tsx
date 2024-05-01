@@ -20,14 +20,14 @@ export const HomePages = () => {
         quality={100}
       />
       <article className="z-10 flex max-w-3xl flex-col gap-2 justify-self-center px-2 text-center md:px-32">
-        <h1 className=" rounded-lg bg-mygradiente p-1 font-titleSubtitle text-3xl font-semibold">
+        <h1 className=" rounded-lg bg-mygradiente p-1 font-titleSubtitle text-3xl font-semibold md:text-4xl">
           Crea tu Huella Digital o vuelve Digital tu Negocio
         </h1>
-        <p className=" font-textPrimary text-base font-medium">
+        <p className=" font-textPrimary text-base font-medium md:text-lg">
           Cuando tienes un Negocio o Presencia digital estas siendo parte del
           nuevo mundo digital
         </p>
-        <p className=" font-textPrimary text-base font-medium">
+        <p className=" font-textPrimary text-base font-medium md:text-lg">
           Con nuestra ayudo podras tener tu Portafolio digital o volver tu
           Negocio digital
         </p>

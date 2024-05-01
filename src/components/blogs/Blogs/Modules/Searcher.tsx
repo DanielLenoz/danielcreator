@@ -29,9 +29,9 @@ export const Searcher: React.FC<SearcherProps> = ({
   }
 
   return (
-    <section className=" mx-auto flex w-full flex-col place-content-between items-center gap-1 font-textPrimary text-base font-normal lg:flex-row ">
+    <section className=" mx-auto flex w-full flex-col place-content-between items-center gap-1 font-textSegundary  text-base  font-normal md:text-lg lg:flex-row ">
       <input
-        className="font-roboto input w-full rounded-full border-2 border-segundary bg-transparent text-base font-normal focus-visible:border-segundary focus-visible:outline-none"
+        className="input w-full rounded-full border-2 border-segundary bg-transparent focus-visible:border-segundary focus-visible:outline-none"
         type="text"
         value={searchValue}
         placeholder="Que idea te llama la atención"

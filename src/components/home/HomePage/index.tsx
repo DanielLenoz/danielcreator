@@ -25,12 +25,12 @@ export const HomePage = () => {
         <p className=" font-titleSubtitle text-5xl font-extrabold">
           Daniel Rodriguez
         </p>
-        <p className=" font-textPrimary text-base font-medium">
+        <p className=" font-textSegundary text-base font-medium md:text-lg">
           Creacion de paginas web com plememntaicon UI/UX
         </p>
         <button>
           <Link
-            className="inline-block rounded-lg bg-segundaryDark px-2 py-1 font-textPrimary  text-base font-medium text-white hover:bg-tertiary"
+            className="inline-block rounded-lg bg-segundaryDark px-2 py-1 font-textPrimary  text-base font-medium text-white hover:bg-tertiary md:text-lg"
             href={'/contacto'}
           >
             Contacto

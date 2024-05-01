@@ -6,10 +6,10 @@ export const ContentPages = () => {
     <section className="grid gap-2">
       <article className="flex flex-col items-center gap-2 xl:flex-row">
         <section className="grid justify-items-start gap-2">
-          <h2 className="justify-self-center font-titleSubtitle text-3xl font-semibold">
+          <h2 className="justify-self-center font-titleSubtitle text-3xl font-semibold md:text-4xl">
             Negociacion
           </h2>
-          <p className=" font-textPrimary text-base font-normal">
+          <p className=" font-textPrimary text-base font-normal md:text-lg">
             entendemos que cada negocio es unico, por eso dedicamos a{' '}
             <span className=" text-segundaryDark">
               crear paginas web personalizadas que reflejen a la persona o
@@ -34,10 +34,10 @@ export const ContentPages = () => {
             procesos claves del producto, haciendo que puedas ver informacion
             clave del producto
           </p>
-          <button className="inline-block rounded-lg bg-cyan-700 px-2 py-1 font-textSegundary text-base font-medium text-white hover:bg-tertiary">
+          <button className="inline-block rounded-lg bg-cyan-700 px-2 py-1 font-textSegundary text-base font-medium text-white hover:bg-tertiary md:text-lg">
             <Link href={''}>Contrato de Landing Pages</Link>
           </button>
-          <button className="inline-block rounded-lg bg-cyan-900 px-2 py-1 font-textSegundary text-base font-medium text-white hover:bg-tertiary">
+          <button className="inline-block rounded-lg bg-cyan-900 px-2 py-1 font-textSegundary text-base font-medium text-white hover:bg-tertiary md:text-lg">
             <Link href={''}>Contrato de Pagina Web Dinamica</Link>
           </button>
         </section>
@@ -52,10 +52,10 @@ export const ContentPages = () => {
       </article>
       <article className="flex flex-col items-center gap-2 xl:flex-row-reverse">
         <section className="grid items-start gap-2">
-          <h2 className=" text-center font-titleSubtitle text-3xl font-semibold">
+          <h2 className=" text-center font-titleSubtitle text-3xl font-semibold md:text-4xl">
             Diseño
           </h2>
-          <p className=" font-textPrimary text-base font-normal">
+          <p className=" font-textPrimary text-base font-normal md:text-lg">
             cada sitio web es unico e inigualable como las personas o empresa
             que confían en nosotros para crear su sitio web{' '}
             <span className=" text-segundaryDark">
@@ -78,10 +78,10 @@ export const ContentPages = () => {
       </article>
       <article className="flex flex-col items-center gap-2 xl:flex-row">
         <section className="grid items-start gap-2">
-          <h2 className=" text-center font-titleSubtitle text-3xl font-semibold">
+          <h2 className=" text-center font-titleSubtitle text-3xl font-semibold md:text-4xl">
             Desarrollo
           </h2>
-          <p className=" font-textPrimary text-base font-normal">
+          <p className=" font-textPrimary text-base font-normal md:text-lg">
             cuando tenemos el diseño deseado comenzamos la parte de desarrollo,
             donde nosotros crearemos codigo limpio y{' '}
             <span className=" text-segundaryDark">
@@ -111,10 +111,10 @@ export const ContentPages = () => {
       </article>
       <article className="flex flex-col items-center gap-2 xl:flex-row-reverse">
         <section className="grid items-start gap-2">
-          <h2 className=" text-center font-titleSubtitle text-3xl font-semibold">
+          <h2 className=" text-center font-titleSubtitle text-3xl font-semibold  md:text-3xl">
             Lanzamiento
           </h2>
-          <p className=" font-textPrimary text-base font-normal">
+          <p className=" font-textPrimary text-base font-normal  md:text-lg">
             antes de lanzar el sitio web al mercado hacemos principal un chequeo
             de funcionalidades y objetivos concordados, hacemos la{' '}
             <span className=" text-segundaryDark">

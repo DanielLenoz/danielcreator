@@ -20,7 +20,7 @@ export const CertificateSections: React.FC<CertificateSectionsProps> = ({
 
   return (
     <>
-      <h1 className=" mb-1 font-titleSubtitle text-2xl font-semibold">
+      <h1 className=" mb-1 font-titleSubtitle text-2xl font-semibold md:text-3xl">
         {title}
       </h1>
       <Swiper

@@ -12,9 +12,9 @@ export const Searcher: React.FC<SearcherProps> = ({
   setSearchValue,
 }) => {
   return (
-    <section className="mx-auto flex w-full place-content-between items-center overflow-hidden rounded-2xl border-2 border-segundary font-textPrimary text-base font-normal ">
+    <section className="mx-auto flex w-full place-content-between items-center overflow-hidden rounded-2xl border-2 border-segundary font-textPrimary text-base font-normal md:text-lg  ">
       <input
-        className="font-roboto input w-full bg-transparent text-base font-normal focus-visible:border-none focus-visible:outline-none"
+        className="input w-full bg-transparent focus-visible:border-none focus-visible:outline-none"
         type="text"
         value={searchValue}
         placeholder="Buscar"
@@ -23,7 +23,7 @@ export const Searcher: React.FC<SearcherProps> = ({
         }
       />
       <select
-        className="mr-2 h-full w-24 border-l-2 border-segundary bg-transparent pl-2 focus-visible:border-none focus-visible:outline-none"
+        className="mr-2 h-full w-28 border-l-2 border-segundary bg-transparent pl-2 text-segundaryDark focus-visible:border-none focus-visible:outline-none"
         onChange={(event) =>
           setCategories(event.target.value.toLocaleLowerCase())
         }

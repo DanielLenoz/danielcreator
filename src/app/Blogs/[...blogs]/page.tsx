@@ -38,15 +38,15 @@ export default async function Projects(props: Blogs) {
             alt={blog?.title}
             quality={100}
           />
-          <section className="grid gap-2 mb-1">
-            <h1 className=" font-titleSubtitle text-2xl font-semibold">
+          <section className="mb-1 grid gap-2">
+            <h1 className=" font-titleSubtitle text-2xl font-semibold md:text-3xl">
               {blog.title}
             </h1>
-            <article className="flex justify-between font-textSegundary text-base font-medium">
+            <article className="flex justify-between font-textSegundary text-base font-medium md:text-lg">
               <p className=" text-segundary">{blog.hastag}</p>
               <p>{blog.created_at}</p>
             </article>
-            <section className="grid gap-1 font-textSegundary  text-base font-normal">
+            <section className="grid gap-1 font-textSegundary text-base font-normal md:text-lg">
               <MDXRemote source={blog.content} />
             </section>
           </section>

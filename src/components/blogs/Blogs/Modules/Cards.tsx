@@ -17,16 +17,16 @@ export const Cards = ({ Blogs }: { Blogs: any[] | null }) => {
               quality={100}
             />
             <article className="grid gap-1 p-1">
-              <h2 className=" text-center font-titleSubtitle text-2xl font-semibold">
+              <h2 className=" text-center font-titleSubtitle text-2xl font-semibold ">
                 {blog.title}
               </h2>
-              <p className=" font-textSegundary text-base font-medium text-segundaryDark">
+              <p className=" font-textSegundary text-base font-medium text-segundaryDark md:text-lg">
                 {blog.hastag}
               </p>
-              <p className=" font-textSegundary text-base font-normal">
+              <p className=" font-textSegundary text-base font-normal md:text-lg">
                 {blog.description}
               </p>
-              <article className=" flex justify-between font-textSegundary text-base font-medium text-segundaryDark">
+              <article className=" flex justify-between font-textSegundary text-base font-medium text-segundaryDark md:text-lg">
                 <Link href={`/Blogs/${blog.id}`}>Leer mas</Link>
                 <p>{blog.created_at}</p>
               </article>

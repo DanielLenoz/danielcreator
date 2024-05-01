@@ -41,7 +41,7 @@ export default async function Projects(props: Projects) {
               alt={project?.title}
               quality={100}
             />
-            <h1 className=" font-titleSubtitle text-2xl font-semibold">
+            <h1 className=" font-titleSubtitle text-2xl font-semibold md:text-4xl">
               {project.title}
             </h1>
 
@@ -60,15 +60,15 @@ export default async function Projects(props: Projects) {
                 )
               })}
             </section>
-            <section className="grid gap-1 font-textPrimary text-base font-normal">
+            <section className="grid gap-1 font-textPrimary text-base font-normal md:text-lg">
               <MDXRemote source={project.content} />
             </section>
-            <article className="flex justify-between font-textSegundary text-base font-medium text-segundaryDark">
+            <article className="flex justify-between font-textSegundary text-base font-medium text-segundaryDark md:text-lg">
               <p>{project.hastag}</p>
               <p>{project.created_at}</p>
             </article>
 
-            <article className="flex flex-wrap gap-1">
+            <article className="flex flex-wrap gap-1 font-textPrimary text-base font-medium md:text-lg ">
               <button className=" rounded-2xl bg-segundaryDark px-2 py-1 hover:bg-tertiary">
                 <Link
                   href={project.Links.github}
@@ -92,7 +92,7 @@ export default async function Projects(props: Projects) {
         )
       })}
       <section>
-        <h1 className=" pb-2 text-center font-titleSubtitle text-2xl font-semibold">
+        <h1 className=" py-2 text-center font-titleSubtitle text-2xl font-semibold md:text-3xl">
           Ultimos Trabajos
         </h1>
         <Cards projects={Projects} />

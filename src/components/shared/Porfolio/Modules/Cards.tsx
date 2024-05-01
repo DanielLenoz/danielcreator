@@ -19,12 +19,12 @@ export const Cards = ({ projects }: { projects: any[] | null }) => {
             />
 
             <article className=" absolute grid max-w-60 gap-2 rounded-2xl bg-mygradiente p-2 sm:max-w-80">
-              <p className=" text-center font-titleSubtitle text-2xl font-semibold">
+              <p className=" text-center font-titleSubtitle text-2xl font-semibold md:text-3xl">
                 {projects.title}
               </p>
               <button>
                 <Link
-                  className="rounded-lg bg-segundaryDark px-2 py-1 text-center font-textPrimary text-base font-medium text-white hover:bg-tertiary"
+                  className="rounded-lg bg-segundaryDark px-2 py-1 text-center font-textPrimary text-base font-medium text-white hover:bg-tertiary md:text-lg"
                   href={`/Projects/${projects.id}`}
                 >
                   Mas Información

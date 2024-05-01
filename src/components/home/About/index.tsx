@@ -2,18 +2,15 @@ import { Carrusel } from './Carrusel'
 
 export const About = () => {
   return (
-    <section className=" grid gap-2 pt-2 md:grid-cols-2">
+    <section className=" grid gap-2 pt-5 md:grid-cols-2 ">
       <article className=" grid gap-1">
-        <h3 className=" font-titleSubtitle text-2xl font-semibold text-segundaryDark">
-          Quien soy
-        </h3>
-        <h1 className=" font-titleSubtitle text-3xl font-semibold">
+        <h1 className=" font-titleSubtitle text-3xl font-semibold md:text-4xl">
           Hola Soy Daniel Rodríguez Desarrollador
         </h1>
-        <p className=" font-textSegundary text-base font-medium">
+        <p className=" font-textSegundary text-base font-medium md:text-lg">
           Cada producto tiene su historia y su sueño
         </p>
-        <p className=" font-textPrimary text-base font-normal">
+        <p className=" font-textPrimary text-base font-normal md:text-lg">
           Soy un <span className=" text-segundaryDark">apasionado</span> de la
           creacion de paginas web, cada producto creado es un usuario con una
           meta clara,{' '}
@@ -27,10 +24,10 @@ export const About = () => {
         </p>
       </article>
       <section className=" overflow-hidden rounded-2xl bg-segundaryDark">
-        <p className=" bg-segundary p-1 text-start text-base font-medium ">
+        <p className=" bg-segundary p-1 text-start text-base font-medium md:text-lg ">
           Herramientas de Desarrollo
         </p>
-        <article className="max-h-80">
+        <article className="max-h-64">
           <Carrusel />
         </article>
       </section>

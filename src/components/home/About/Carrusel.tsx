@@ -68,11 +68,11 @@ export const Carrusel = () => {
       {images.map(({ image, alt }) => (
         <SwiperSlide className="flex items-center justify-center object-cover">
           <Image
-            className=" h-auto w-auto"
+            className=" h-auto w-auto "
             key={alt}
             src={image}
             alt={alt}
-            width={170}
+            width={250}
             height={305}
           />
         </SwiperSlide>
