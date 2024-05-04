@@ -2,6 +2,24 @@ import Image from 'next/image'
 import { supabase } from 'app/supabase/client'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { Content } from 'app/components/blogs/Blogs'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'DanielCreator: Blog',
+  description: 'Blog creador por DanielCreator',
+  keywords: [
+    'tecnologia',
+    'ingles',
+    'diseño',
+    'liderasgo',
+    'historias',
+    'eventos',
+    'proyectos',
+    'experiencias',
+    'daniel',
+    'rodriguez',
+  ],
+}
 
 interface Blogs {
   params: {

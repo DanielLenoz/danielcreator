@@ -1,5 +1,4 @@
 export default function Loading() {
-  // You can add any UI inside Loading, including a Skeleton bg-gray-500.
   return (
     <main className=" grid min-h-[324px] gap-3 px-2 py-3 md:px-32">
       <section className="relative z-10 grid gap-3 md:grid-cols-2">

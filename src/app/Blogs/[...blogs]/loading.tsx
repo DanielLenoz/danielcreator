@@ -1,5 +1,4 @@
 export default function Loading() {
-  // You can add any UI inside Loading, including a Skeleton bg-gray-500.
   return (
     <>
       <div className="grid gap-3 px-2 md:px-32">

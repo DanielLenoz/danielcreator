@@ -1,7 +1,23 @@
-import { Contacto } from 'app/components/contacto/Contacto'
 import Image from 'next/image'
+import { Metadata } from 'next'
+import { Contacto } from 'app/components/contacto/Contacto'
 import { ImDownload2 } from 'react-icons/im'
 import { RiGithubFill, RiLinkedinFill } from 'react-icons/ri'
+
+export const metadata: Metadata = {
+  title: 'DanielCreator: Contacto',
+  description: 'Tipos de contacto a DanielCreator',
+  keywords: [
+    'servicios web',
+    'daniel',
+    'rodriguez',
+    'contacto',
+    'github',
+    'linkedin',
+    'gmail',
+  ],
+}
+
 export default function Contact() {
   return (
     <main className=" grid min-h-[324px] gap-3 bg-gradient-to-b from-cyan-400 to-neutral-100 px-2 py-3 md:px-32">

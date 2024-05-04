@@ -1,4 +1,11 @@
+import { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'DanielCreator: Terminos de uso',
+  description: 'Terminos de uso de la pagina web de DanielCreator',
+  keywords: ['terminos de uso', 'reglas', 'normas'],
+}
 
 export default function TerminosUso() {
   return (

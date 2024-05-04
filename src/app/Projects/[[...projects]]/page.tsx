@@ -1,10 +1,27 @@
 import Image from 'next/image'
+import { Metadata } from 'next'
 import { supabase } from 'app/supabase/client'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { RiGithubFill } from 'react-icons/ri'
 import { CiGlobe } from 'react-icons/ci'
-import { Cards } from 'app/components/shared/Porfolio/Modules/Cards'
 import { Modules } from 'app/components/shared/Porfolio/Modules'
+
+export const metadata: Metadata = {
+  title: 'DanielCreator: Proyectos',
+  description: 'proyectos y trabajos sobre paginas web dinamicas y estaticas',
+  keywords: [
+    'landing page',
+    'wed dynamic',
+    'paginas estaticas',
+    'paginas dinamicas',
+    'servicios web',
+    'portafolio',
+    'daniel',
+    'rodriguez',
+    'proyectos',
+    'trabajos',
+  ],
+}
 
 interface Projects {
   params: {

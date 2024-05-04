@@ -1,5 +1,23 @@
 import { supabase } from 'app/supabase/client'
+import { Metadata } from 'next'
 import { CertificateSections } from 'app/components/certificados/CertificateSections'
+
+export const metadata: Metadata = {
+  title: 'DanielCreator: Certificados',
+  description: 'Todos los Certificados de DanielCreator',
+  keywords: [
+    'tecnologia',
+    'ingles',
+    'diseño',
+    'liderasgo',
+    'diversas habilidades',
+    'daniel',
+    'rodriguez',
+    'platzi',
+    'cursos',
+    'sertificados',
+  ],
+}
 
 export default async function Home() {
   let { data: Certificates, error } = await supabase

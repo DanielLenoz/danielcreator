@@ -1,9 +1,5 @@
 import type { Metadata } from 'next'
-import {
-  Roboto_Mono,
-  Work_Sans,
-  Montserrat_Alternates,
-} from 'next/font/google'
+import { Roboto_Mono, Work_Sans, Montserrat_Alternates } from 'next/font/google'
 import './globals.css'
 import { Header } from 'app/components/shared/Header'
 import { Footer } from 'app/components/shared/Footer'
@@ -53,7 +49,7 @@ export default function RootLayout({
       <body className=" bg-mainBackgraound text-black">
         <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   )
