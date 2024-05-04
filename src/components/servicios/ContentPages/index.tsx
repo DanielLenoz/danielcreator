@@ -45,7 +45,7 @@ export const ContentPages = () => {
           className=" rounded-2xl"
           src={'/assets/images/services/contract.webp'}
           width={540}
-          height={550}
+          height={500}
           alt={'contratos de personas'}
           quality={100}
         />

@@ -4,7 +4,7 @@ import { ImDownload2 } from 'react-icons/im'
 import { RiGithubFill, RiLinkedinFill } from 'react-icons/ri'
 export default function Contact() {
   return (
-    <main className=" grid min-h-[324px] gap-3 px-2 py-3 md:px-32">
+    <main className=" grid min-h-[324px] gap-3 bg-gradient-to-b from-cyan-400 to-neutral-100 px-2 py-3 md:px-32">
       <section className="relative z-10 grid gap-3 md:grid-cols-2">
         <article className="relative grid gap-2 overflow-hidden rounded-lg border-b-4 border-segundaryDark bg-segundary p-1 text-white">
           <h1 className=" z-10 font-titleSubtitle text-2xl font-bold  md:text-3xl">

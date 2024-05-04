@@ -49,7 +49,7 @@ export const HomePage = () => {
           <SwiperSlide className="object-cover">
             <article className=" relative grid place-items-center">
               <Image
-                className=" max-h-[589px] object-cover sm:hidden"
+                className="max-h-[400px] object-cover sm:hidden"
                 key={blog.title}
                 src={blog.img.small}
                 alt={blog.title}
@@ -58,7 +58,7 @@ export const HomePage = () => {
                 quality={100}
               />
               <Image
-                className="hidden max-h-[589px] object-cover sm:block"
+                className="hidden max-h-[400px] object-cover sm:block"
                 key={blog.title}
                 src={blog.img.full}
                 alt={blog.title}

@@ -69,7 +69,6 @@ export default async function Projects(props: Projects) {
             </article>
 
             <article className="flex flex-wrap gap-1 font-textPrimary text-base font-medium md:text-lg ">
-              <a href="http://"></a>
               <button className=" rounded-2xl bg-segundaryDark px-2 py-1 hover:bg-tertiary">
                 <a
                   className="flex items-center text-white"
@@ -99,7 +98,6 @@ export default async function Projects(props: Projects) {
           Continúa explorando más de mis trabajos
         </h1>
         <Modules />
-        {/* <Cards projects={Projects} /> */}
       </section>
     </main>
   )
