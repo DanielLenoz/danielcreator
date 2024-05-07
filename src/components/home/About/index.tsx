@@ -2,7 +2,7 @@ import { Carrusel } from './Carrusel'
 
 export const About = () => {
   return (
-    <section className=" grid gap-2 pt-5 md:grid-cols-2 ">
+    <section className=" grid gap-2 pt-5 md:grid-cols-2  ">
       <article className=" grid gap-1">
         <h1 className=" font-titleSubtitle text-3xl font-semibold md:text-4xl">
           Hola, soy Daniel Rodríguez, desarrollador
@@ -18,7 +18,7 @@ export const About = () => {
           <span>huella digital profesional</span>
         </p>
       </article>
-      <section className=" overflow-hidden rounded-2xl bg-segundaryDark">
+      <section className=" -skew-y-2 overflow-hidden rounded-2xl  bg-segundaryDark">
         <p className=" bg-segundary p-1 text-start text-base font-medium md:text-lg ">
           Herramientas de Desarrollo
         </p>

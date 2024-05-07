@@ -5,7 +5,7 @@ export default function Loading() {
       <div className="skeleton  min-h-[400px] w-full  bg-gray-500"></div>
       <div className="grid gap-3 px-2 md:px-32">
         {/* Blogs */}
-        <p className="skeleton h-8 w-full bg-gray-500 pt-3"></p>
+        <p className="skeleton mt-3 h-8 w-full bg-gray-500"></p>
         <section className=" flex w-full place-content-between items-center rounded-2xl ">
           <div className="skeleton h-4 w-full bg-gray-500"></div>
           <div className="skeleton h-4 w-full bg-gray-500"></div>

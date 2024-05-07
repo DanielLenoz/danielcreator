@@ -53,8 +53,8 @@ export const HomePage = () => {
                 key={blog.title}
                 src={blog.img.small}
                 alt={blog.title}
-                width={1440}
-                height={589}
+                width={635}
+                height={374}
                 quality={100}
               />
               <Image
@@ -63,7 +63,7 @@ export const HomePage = () => {
                 src={blog.img.full}
                 alt={blog.title}
                 width={1440}
-                height={589}
+                height={400}
                 quality={100}
               />
               <article className=" absolute z-10 grid justify-items-center gap-5">

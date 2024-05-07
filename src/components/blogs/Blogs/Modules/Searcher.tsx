@@ -31,7 +31,7 @@ export const Searcher: React.FC<SearcherProps> = ({
   return (
     <section className=" mx-auto flex w-full flex-col place-content-between items-center gap-1 font-textSegundary  text-base  font-normal md:text-lg lg:flex-row ">
       <input
-        className="input w-full rounded-full border-2 border-segundary bg-transparent focus-visible:border-segundary focus-visible:outline-none"
+        className="input w-full rounded-full border-2 border-segundary dark:border-segundaryDark bg-transparent focus-visible:border-tertiary focus-visible:outline-none dark:focus-visible:border-segundary "
         type="text"
         value={searchValue}
         placeholder="Que idea te llama la atención"
@@ -42,13 +42,13 @@ export const Searcher: React.FC<SearcherProps> = ({
 
       <div
         role="tablist"
-        className="tabs tabs-lifted w-72 overflow-hidden  sm:w-full"
+        className="tabs tabs-lifted w-72 overflow-x-auto sm:w-2/3 sm:overflow-hidden"
       >
         {activeTabs.map((tab, index) => (
           <a
             key={index}
             role="tab"
-            className={`tab [--tab-bg:#99BAC7] [--tab-border-color:#0E3A4D]  ${tab.active ? 'tab-active text-white' : ''}`}
+            className={`tab [--tab-bg:#99BAC7] [--tab-border-color:#0E3A4D] dark:[--tab-bg:#3C7C98] dark:[--tab-border-color:#99BAC7]  ${tab.active ? 'tab-active text-white' : ''}`}
             onClick={() => handleClick(index, tab.title)}
           >
             {tab.title}

@@ -9,7 +9,7 @@ export const Experience = () => {
       </h1>
       <ul className="timeline timeline-vertical timeline-snap-icon max-md:timeline-compact">
         <li>
-          <PiBooksFill className="timeline-middle h-5 w-5 fill-segundaryDark dark:fill-segundary" />
+          <PiBooksFill className="timeline-middle h-5 w-5 animate-bounce fill-segundaryDark dark:fill-segundary" />
           <article className="timeline-start mb-10 grid gap-[4px] md:text-end">
             <time className="font-textSegundary text-base italic md:text-lg">
               Noviembre 2021
@@ -30,7 +30,7 @@ export const Experience = () => {
         </li>
         <li>
           <hr className=" bg-segundary" />
-          <BsFire className="timeline-middle h-5 w-5 fill-segundaryDark dark:fill-segundary" />
+          <BsFire className="timeline-middle h-5 w-5 animate-bounce fill-segundaryDark dark:fill-segundary " />
           <article className="timeline-end mb-10 grid gap-[4px]">
             <time className="font-textSegundary text-base italic md:text-lg">
               Marzo 2023

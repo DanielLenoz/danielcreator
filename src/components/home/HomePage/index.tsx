@@ -18,7 +18,7 @@ export const HomePage = () => {
         width={360}
         height={360}
       />
-      <section className="z-10 grid min-h-[400px] max-w-[604px] justify-items-start gap-2 justify-self-end bg-mygradiente p-2 sm:w-2/3">
+      <section className=" z-10 grid min-h-[400px] max-w-[604px] justify-items-start gap-2 justify-self-end bg-mygradiente p-2 sm:w-2/3">
         <p className="rounded-lg bg-mygradiente p-1 font-titleSubtitle text-4xl font-bold">
           Frontend Developer / Designer UI/UX
         </p>
@@ -30,7 +30,7 @@ export const HomePage = () => {
         </p>
         <button>
           <Link
-            className="inline-block rounded-lg bg-segundaryDark px-2 py-1 font-textPrimary  text-base font-medium text-white hover:bg-tertiary md:text-lg"
+            className="inline-block rounded-lg bg-segundaryDark px-2 py-1 font-textPrimary  text-base font-medium text-white shadow-lg shadow-gray-500 hover:bg-tertiary hover:shadow-tertiary md:text-lg"
             href={'/Contact'}
           >
             Contacto
