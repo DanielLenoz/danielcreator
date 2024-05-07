@@ -40,7 +40,7 @@ export const Contacto = () => {
       onSubmit={sendEmail}
     >
       <input
-        className=" rounded-lg border-b-2 border-segundaryDark  bg-transparent px-1  focus-visible:outline-none"
+        className=" rounded-lg border-b-2 border-segundaryDark bg-transparent  px-1 focus-visible:outline-none  dark:placeholder-slate-50"
         placeholder="Tu nombre"
         type="text"
         name="user_name"
@@ -50,7 +50,7 @@ export const Contacto = () => {
         }
       />
       <input
-        className=" rounded-lg border-b-2 border-segundaryDark  bg-transparent px-1  focus-visible:outline-none"
+        className=" rounded-lg border-b-2 border-segundaryDark bg-transparent  px-1 focus-visible:outline-none  dark:placeholder-slate-50"
         placeholder="Tu Correo"
         type="email"
         name="user_email"
@@ -60,7 +60,7 @@ export const Contacto = () => {
         }
       />
       <textarea
-        className=" min-h-28 rounded-lg border-b-2  border-segundaryDark bg-transparent px-1  focus-visible:outline-none"
+        className=" min-h-28 rounded-lg border-b-2  border-segundaryDark bg-transparent px-1  focus-visible:outline-none dark:placeholder-slate-50"
         placeholder="Que me quieres decir "
         name="message"
         value={formData.message}

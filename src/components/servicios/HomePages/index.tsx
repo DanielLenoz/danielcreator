@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const HomePages = () => {
   return (
-    <section className="relative grid h-screen max-h-[525px] items-center bg-gradient-to-b from-cyan-400 to-neutral-100">
+    <section className="relative grid h-screen max-h-[525px] items-center bg-gradient-to-b from-cyan-400 to-neutral-100 dark:to-primariDark">
       <Image
         className=" absolute top-0"
         src={'/assets/images/services/imagebg.webp'}

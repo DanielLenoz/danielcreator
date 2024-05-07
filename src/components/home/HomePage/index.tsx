@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const HomePage = () => {
   return (
-    <section className="relative grid max-h-[525px] overflow-hidden bg-gradient-to-b from-cyan-400 to-neutral-100">
+    <section className="relative grid max-h-[525px] overflow-hidden bg-gradient-to-b from-cyan-400 to-neutral-100 dark:to-primariDark ">
       <Image
         className="absolute top-0 md:-top-12"
         src="/assets/images/person/Earth.webp"
@@ -18,7 +18,7 @@ export const HomePage = () => {
         width={360}
         height={360}
       />
-      <section className="z-10 grid min-h-[400px] max-w-[604px] justify-items-start gap-2 justify-self-end bg-mygradiente p-2">
+      <section className="z-10 grid min-h-[400px] max-w-[604px] justify-items-start gap-2 justify-self-end bg-mygradiente p-2 sm:w-2/3">
         <p className="rounded-lg bg-mygradiente p-1 font-titleSubtitle text-4xl font-bold">
           Frontend Developer / Designer UI/UX
         </p>

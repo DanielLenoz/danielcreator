@@ -8,7 +8,7 @@ export const Cards = ({ projects }: { projects: any[] | null }) => {
     <section className="flex flex-wrap justify-center gap-2">
       {projects?.map((projects) => {
         return (
-          <section className=" relative grid max-h-[246] max-w-[390] items-center justify-items-center overflow-hidden rounded-2xl shadow-xl">
+          <section className=" relative grid max-h-[246] max-w-[390] items-center justify-items-center overflow-hidden rounded-2xl shadow-xl shadow-gray-500 ">
             <Image
               key={projects.id}
               src={projects.img?.small}
@@ -19,9 +19,9 @@ export const Cards = ({ projects }: { projects: any[] | null }) => {
             />
 
             <article className=" absolute grid max-w-60 gap-2 rounded-2xl bg-mygradiente p-2 sm:max-w-80">
-              <p className=" text-center font-titleSubtitle text-2xl font-semibold md:text-3xl">
+              <h2 className=" text-center font-titleSubtitle text-2xl font-semibold text-black md:text-3xl">
                 {projects.title}
-              </p>
+              </h2>
               <button>
                 <Link
                   className="rounded-lg bg-segundaryDark px-2 py-1 text-center font-textPrimary text-base font-medium text-white hover:bg-tertiary md:text-lg"

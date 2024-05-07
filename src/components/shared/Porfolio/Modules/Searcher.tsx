@@ -23,7 +23,7 @@ export const Searcher: React.FC<SearcherProps> = ({
         }
       />
       <select
-        className="mr-2 h-full w-28 border-l-2 border-segundary bg-transparent pl-2 text-segundaryDark focus-visible:border-none focus-visible:outline-none"
+        className="mr-2 h-full w-28 border-l-2 border-segundary bg-transparent pl-2 dark:text-segundary text-segundaryDark focus-visible:border-none focus-visible:outline-none md:w-56"
         onChange={(event) =>
           setCategories(event.target.value.toLocaleLowerCase())
         }

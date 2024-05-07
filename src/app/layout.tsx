@@ -46,7 +46,7 @@ export default function RootLayout({
       lang="en"
       className={`${work_sans.variable} ${montserrat_alternates.variable} ${roboto_mono.variable}`}
     >
-      <body className=" bg-mainBackgraound text-black">
+      <body className=" bg-mainBackgraound text-black dark:bg-primariDark dark:text-white">
         <Header />
         {children}
         <Footer />

@@ -6,7 +6,7 @@ export const Cards = ({ Blogs }: { Blogs: any[] | null }) => {
     <section className="flex flex-wrap justify-center gap-2 sm:grid sm:grid-cols-2 lg:grid-cols-3">
       {Blogs?.map((blog) => {
         return (
-          <section className=" relative grid max-h-[572px] max-w-[387px] items-center justify-items-center overflow-hidden rounded-2xl shadow-xl">
+          <section className=" relative grid max-h-[572px] max-w-[387px] items-center justify-items-center overflow-hidden rounded-2xl shadow-xl shadow-slate-500">
             <Image
               className="rounded-2xl"
               key={blog.title}
@@ -20,13 +20,13 @@ export const Cards = ({ Blogs }: { Blogs: any[] | null }) => {
               <h2 className=" text-center font-titleSubtitle text-2xl font-semibold ">
                 {blog.title}
               </h2>
-              <p className=" font-textSegundary text-base font-medium text-segundaryDark md:text-lg">
+              <p className=" font-textSegundary text-base font-medium text-segundaryDark dark:text-segundary md:text-lg">
                 {blog.hastag}
               </p>
               <p className=" font-textSegundary text-base font-normal md:text-lg">
                 {blog.description}
               </p>
-              <article className=" flex justify-between font-textSegundary text-base font-medium text-segundaryDark md:text-lg">
+              <article className=" flex justify-between font-textSegundary text-base font-medium text-segundaryDark dark:text-segundary md:text-lg">
                 <Link href={`/Blogs/${blog.id}`}>Leer mas</Link>
                 <p>{blog.created_at}</p>
               </article>

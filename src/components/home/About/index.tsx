@@ -11,17 +11,11 @@ export const About = () => {
           Cada producto tiene su propia historia y su propio sueño.
         </p>
         <p className=" font-textPrimary text-base font-normal md:text-lg">
-          Soy un <span className=" text-segundaryDark">apasionado</span> de la
-          creación de páginas web. Cada producto creado representa un usuario
-          con una meta clara.{' '}
-          <span className=" text-segundaryDark">
-            Mi trabajo es brindarles la oportunidad
-          </span>{' '}
-          de digitalizar sus negocios o perfiles profesionales para que tengan
-          una{' '}
-          <span className=" text-segundaryDark">
-            huella digital profesional
-          </span>
+          Soy un <span>apasionado</span> de la creación de páginas web. Cada
+          producto creado representa un usuario con una meta clara.{' '}
+          <span>Mi trabajo es brindarles la oportunidad</span> de digitalizar
+          sus negocios o perfiles profesionales para que tengan una{' '}
+          <span>huella digital profesional</span>
         </p>
       </article>
       <section className=" overflow-hidden rounded-2xl bg-segundaryDark">

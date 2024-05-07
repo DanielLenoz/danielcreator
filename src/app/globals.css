@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-strong {
+strong, span {
     color: #0E3A4D;
+}
+.dark strong, .dark span {
+    color: #99BAC7;
 }
 .rotate-y-180 {
     transform: rotateY(180deg);

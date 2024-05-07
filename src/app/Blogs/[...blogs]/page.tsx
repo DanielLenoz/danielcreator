@@ -61,7 +61,9 @@ export default async function Projects(props: Blogs) {
               {blog.title}
             </h1>
             <article className="flex justify-between font-textSegundary text-base font-medium md:text-lg">
-              <p className=" text-segundary">{blog.hastag}</p>
+              <p className=" text-segundaryDark dark:text-segundary">
+                {blog.hastag}
+              </p>
               <p>{blog.created_at}</p>
             </article>
             <section className="grid gap-1 font-textSegundary text-base font-normal md:text-lg">

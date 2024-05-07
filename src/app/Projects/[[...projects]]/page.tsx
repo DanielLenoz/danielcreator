@@ -80,13 +80,13 @@ export default async function Projects(props: Projects) {
             <section className="grid gap-1 font-textPrimary text-base font-normal md:text-lg">
               <MDXRemote source={project.content} />
             </section>
-            <article className="flex justify-between font-textSegundary text-base font-medium text-segundaryDark md:text-lg">
+            <article className="flex justify-between font-textSegundary text-base font-medium text-segundaryDark md:text-lg dark:text-segundary">
               <p>{project.hastag}</p>
               <p>{project.created_at}</p>
             </article>
 
-            <article className="flex flex-wrap gap-1 font-textPrimary text-base font-medium md:text-lg ">
-              <button className=" rounded-2xl bg-segundaryDark px-2 py-1 hover:bg-tertiary">
+            <article className="flex flex-wrap gap-2 font-textPrimary text-base font-medium md:text-lg ">
+              <button className="shadow-lg shadow-gray-500 hover:shadow-tertiary  rounded-2xl bg-segundaryDark px-2 py-1 hover:bg-tertiary">
                 <a
                   className="flex items-center text-white"
                   href={project.Links.github}
@@ -96,7 +96,7 @@ export default async function Projects(props: Projects) {
                   Repositorio
                 </a>
               </button>
-              <button className="rounded-2xl bg-segundaryDark px-2 py-1">
+              <button className="shadow-lg shadow-gray-500 hover:shadow-tertiary rounded-2xl bg-segundaryDark px-2 py-1 hover:bg-tertiary">
                 <a
                   className="flex items-center text-white"
                   href={project.Links.website}

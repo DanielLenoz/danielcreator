@@ -59,21 +59,21 @@ export const Carrusel = () => {
       breakpoints={{
         1000: {
           slidesPerView: 1,
-          spaceBetween: '-73%',
+          spaceBetween: '-77%',
         },
       }}
       modules={[Autoplay]}
-      className="mySwiper h-auto w-auto"
+      className="mySwiper h-full w-auto"
     >
       {images.map(({ image, alt }) => (
-        <SwiperSlide className="flex items-center justify-center object-cover">
+        <SwiperSlide className="flex max-h-[303px] items-center justify-center object-cover">
           <Image
-            className=" h-auto w-auto "
+            className=" h-full max-h-[303px] w-auto"
             key={alt}
             src={image}
             alt={alt}
             width={250}
-            height={305}
+            height={300}
           />
         </SwiperSlide>
       ))}
