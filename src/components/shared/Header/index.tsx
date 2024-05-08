@@ -25,11 +25,10 @@ export const Header = () => {
     <>
       <header className="flex max-h-8 min-h-8 place-content-between items-center bg-mainBackgraound px-2 dark:bg-primariDark">
         <RiMenuLine
-          className=" da h-6 w-6 cursor-pointer fill-current stroke-1 dark:fill-slate-100"
+          className="h-6 w-6 cursor-pointer fill-current stroke-1 dark:fill-slate-100"
           onClick={() => setVisibleLeft(true)}
         />
         <Image
-          className=" pt-1"
           src={
             darkTheme
               ? '/assets/icons/logo-white.svg'

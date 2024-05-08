@@ -51,6 +51,7 @@ export const CertificateSections: React.FC<CertificateSectionsProps> = ({
               alt={alt}
               width={390}
               height={240}
+              quality={100}
             />
           </SwiperSlide>
         ))}

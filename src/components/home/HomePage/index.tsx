@@ -10,6 +10,7 @@ export const HomePage = () => {
         alt="daniel rodriguez"
         width={1440}
         height={525}
+        quality={100}
       />
       <Image
         className="md absolute top-5 sm:top-0"
@@ -17,6 +18,7 @@ export const HomePage = () => {
         alt="daniel rodriguez"
         width={360}
         height={360}
+        quality={100}
       />
       <section className=" z-10 grid min-h-[400px] max-w-[604px] justify-items-start gap-2 justify-self-end bg-mygradiente p-2 sm:w-2/3">
         <p className="rounded-lg bg-mygradiente p-1 font-titleSubtitle text-4xl font-bold">

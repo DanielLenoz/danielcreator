@@ -74,6 +74,7 @@ export const Carrusel = () => {
             alt={alt}
             width={250}
             height={300}
+            quality={100}
           />
         </SwiperSlide>
       ))}
