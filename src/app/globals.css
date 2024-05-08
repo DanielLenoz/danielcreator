@@ -11,3 +11,9 @@ strong, span {
 .rotate-y-180 {
     transform: rotateY(180deg);
 }
+
+*{
+    scrollbar-color: #99BAC7 transparent;
+    scrollbar-width: thin;
+    
+}

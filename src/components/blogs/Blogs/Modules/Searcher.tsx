@@ -31,7 +31,7 @@ export const Searcher: React.FC<SearcherProps> = ({
   return (
     <section className=" mx-auto flex w-full flex-col place-content-between items-center gap-1 font-textSegundary  text-base  font-normal md:text-lg lg:flex-row ">
       <input
-        className="input w-full rounded-full border-2 border-segundary dark:border-segundaryDark bg-transparent focus-visible:border-tertiary focus-visible:outline-none dark:focus-visible:border-segundary "
+        className="input w-full rounded-full border-2 border-segundary bg-transparent focus-visible:border-tertiary focus-visible:outline-none dark:border-segundaryDark dark:focus-visible:border-segundary "
         type="text"
         value={searchValue}
         placeholder="Que idea te llama la atención"
@@ -42,7 +42,7 @@ export const Searcher: React.FC<SearcherProps> = ({
 
       <div
         role="tablist"
-        className="tabs tabs-lifted w-72 overflow-x-auto sm:w-2/3 sm:overflow-hidden"
+        className="tabs tabs-lifted w-72 overflow-x-auto sm:w-10/12 sm:overflow-hidden"
       >
         {activeTabs.map((tab, index) => (
           <a

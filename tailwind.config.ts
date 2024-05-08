@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        bounce: 'bounce 2s infinite',
+      },
       fontFamily: {
         titleSubtitle: ['var(--font-work-sans)'],
         textPrimary: ['var(--font-montserrat-alternates)'],

@@ -1,12 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import ScrollAnimation from 'react-animate-on-scroll'
+import 'animate.css/animate.compat.css'
 
 export const Cards = ({ Blogs }: { Blogs: any[] | null }) => {
   return (
     <section className="flex flex-wrap justify-center gap-2 sm:grid sm:grid-cols-2 lg:grid-cols-3">
       {Blogs?.map((blog) => {
         return (
-          <section className=" relative grid max-h-[572px] max-w-[387px] items-center justify-items-center overflow-hidden rounded-2xl shadow-xl shadow-slate-500">
+          <ScrollAnimation
+            animateIn="fadeIn"
+            className=" relative grid max-h-[572px] max-w-[387px] items-center justify-items-center overflow-hidden rounded-2xl shadow-xl shadow-slate-500"
+          >
             <Image
               className="rounded-2xl"
               key={blog.title}
@@ -31,7 +36,7 @@ export const Cards = ({ Blogs }: { Blogs: any[] | null }) => {
                 <p>{blog.created_at}</p>
               </article>
             </article>
-          </section>
+          </ScrollAnimation>
         )
       })}
     </section>

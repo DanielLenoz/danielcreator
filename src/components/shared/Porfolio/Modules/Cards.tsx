@@ -2,13 +2,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { CiGlobe } from 'react-icons/ci'
 import { RiGithubFill } from 'react-icons/ri'
+import ScrollAnimation from 'react-animate-on-scroll'
+import 'animate.css/animate.compat.css'
 
 export const Cards = ({ projects }: { projects: any[] | null }) => {
   return (
     <section className="flex flex-wrap justify-center gap-2">
       {projects?.map((projects) => {
         return (
-          <section className=" relative grid max-h-[246] max-w-[390] items-center justify-items-center overflow-hidden rounded-2xl shadow-xl shadow-gray-500 ">
+          <ScrollAnimation
+            animateIn="fadeIn"
+            animateOut="fadeOut"
+            className=" relative grid max-h-[246] max-w-[390] items-center justify-items-center overflow-hidden rounded-2xl shadow-xl shadow-gray-500 "
+          >
             <Image
               key={projects.id}
               src={projects.img?.small}
@@ -53,7 +59,7 @@ export const Cards = ({ projects }: { projects: any[] | null }) => {
                 <div className=" absolute h-24 w-24 rounded-full group-hover:animate-pulse group-hover:bg-mygradiente"></div>
               </div>
             </article>
-          </section>
+          </ScrollAnimation>
         )
       })}
     </section>
