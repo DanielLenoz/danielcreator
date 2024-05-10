@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function NotFound() {
   return (
-    <main className="grid justify-center justify-items-center gap-2 px-2 py-3 md:px-32 bg-primariDark">
+    <main className="grid justify-center justify-items-center gap-2 bg-primariDark px-2 py-3 md:px-32">
       <Image
         src="/assets/images/404.webp"
         alt="daniel rodriguez"
@@ -19,12 +19,14 @@ export default function NotFound() {
           Sin embargo, me esforzaré para crear un contenido llamativo y
           productivo.
         </p>
-        <Link
-          className=" rounded-lg bg-segundary px-2 py-1 font-textPrimary text-base font-medium shadow-lg shadow-gray-500 hover:bg-tertiary hover:shadow-cyan-700 md:text-lg"
-          href="/"
-        >
-          Para volver al Home
-        </Link>
+        <button>
+          <Link
+            className=" rounded-lg bg-segundary px-2 py-1 font-textPrimary text-base font-medium shadow-lg shadow-gray-500 hover:bg-tertiary hover:shadow-cyan-700 md:text-lg"
+            href="/"
+          >
+            Para volver al Home
+          </Link>
+        </button>
       </section>
     </main>
   )
