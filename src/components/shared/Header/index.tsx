@@ -7,9 +7,15 @@ import { Routes } from './Routes'
 import './style.model.css'
 
 export const Header = () => {
-  const storedThemes = localStorage.getItem('theme')
   const [visibleLeft, setVisibleLeft] = useState<boolean>(false)
-  const [darkTheme, setDarkTheme] = useState<boolean>(storedThemes === 'dark')
+  const [darkTheme, setDarkTheme] = useState(() => {
+    // Comprueba el tema almacenado en el lado del cliente (navegador)
+    if (typeof window !== 'undefined') {
+      const storedTheme = localStorage.getItem('theme')
+      return storedTheme === 'dark'
+    }
+    return false // Tema predeterminado claro en el lado del servidor
+  })
 
   const toggleTheme = () => {
     setDarkTheme(!darkTheme)
@@ -17,8 +23,14 @@ export const Header = () => {
   }
 
   useEffect(() => {
-    document.documentElement.classList.toggle('dark', darkTheme)
-    document.documentElement.classList.toggle('light', !darkTheme)
+    const body = document.documentElement
+    body.classList.toggle('dark', darkTheme)
+    body.classList.toggle('light', !darkTheme)
+
+    // Opcionalmente, asegura que el tema se aplique incluso en la primera renderización (lado del cliente)
+    if (!localStorage.getItem('theme')) {
+      localStorage.setItem('theme', darkTheme ? 'dark' : 'light')
+    }
   }, [darkTheme])
 
   return (

@@ -9,12 +9,12 @@ export const Cards = ({ Blogs }: { Blogs: any[] | null }) => {
       {Blogs?.map((blog) => {
         return (
           <ScrollAnimation
+            key={blog.title}
             animateIn="fadeIn"
             className=" relative grid max-h-[572px] max-w-[387px] items-center justify-items-center overflow-hidden rounded-2xl shadow-xl shadow-slate-500"
           >
             <Image
               className="rounded-2xl"
-              key={blog.title}
               src={blog.img.small}
               alt={blog.title}
               width={390}

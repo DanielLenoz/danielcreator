@@ -46,11 +46,10 @@ export const HomePage = () => {
         className="mySwiper mb-3 w-full"
       >
         {blogs?.map((blog: any) => (
-          <SwiperSlide className="object-cover">
+          <SwiperSlide className="object-cover" key={blog.title}>
             <article className=" relative grid place-items-center">
               <Image
                 className="max-h-[400px] object-cover sm:hidden"
-                key={blog.title}
                 src={blog.img.small}
                 alt={blog.title}
                 width={635}
@@ -59,7 +58,6 @@ export const HomePage = () => {
               />
               <Image
                 className="hidden max-h-[400px] object-cover sm:block"
-                key={blog.title}
                 src={blog.img.full}
                 alt={blog.title}
                 width={1440}

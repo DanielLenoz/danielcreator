@@ -11,12 +11,12 @@ export const Cards = ({ projects }: { projects: any[] | null }) => {
       {projects?.map((projects) => {
         return (
           <ScrollAnimation
+            key={projects.id}
             animateIn="fadeIn"
             animateOut="fadeOut"
             className=" relative grid max-h-[246] max-w-[390] items-center justify-items-center overflow-hidden rounded-2xl shadow-xl shadow-gray-500 "
           >
             <Image
-              key={projects.id}
               src={projects.img?.small}
               width={400}
               height={300}

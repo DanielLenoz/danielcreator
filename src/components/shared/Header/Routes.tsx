@@ -36,10 +36,9 @@ export const Routes = ({ setVisibleLeft }: any) => {
   return (
     <>
       {navLinks.map(({ href, icon, text }) => (
-        <li>
+        <li key={text}>
           <Link
             className="flex items-center gap-1 border-b-2 border-transparent transition ease-in-out hover:border-slate-400"
-            key={text}
             href={href}
             onClick={() => setVisibleLeft(false)}
           >

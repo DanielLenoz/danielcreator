@@ -43,10 +43,12 @@ export const CertificateSections: React.FC<CertificateSectionsProps> = ({
         className="mySwiper mb-3 w-full"
       >
         {image?.map(({ img, alt }: any) => (
-          <SwiperSlide className="flex items-center justify-center object-cover">
+          <SwiperSlide
+            className="flex items-center justify-center object-cover"
+            key={alt}
+          >
             <Image
               className=" h-auto w-auto"
-              key={alt}
               src={img}
               alt={alt}
               width={390}

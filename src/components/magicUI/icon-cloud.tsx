@@ -1,7 +1,6 @@
 'use client'
 
 import { useTheme } from 'next-themes'
-
 import { useEffect, useMemo, useState } from 'react'
 import {
   Cloud,
@@ -78,7 +77,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
     return Object.values(data.simpleIcons).map((icon) =>
       renderCustomIcon(icon, theme || 'light'),
     )
-  }, [data])
+  }, [data, theme])
 
   return (
     // @ts-ignore
