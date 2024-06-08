@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { SearcherProps } from '.'
+import { PlaceholdersAndVanishInput } from 'app/components/aceternityUI/placeholders-and-vanish-input-blogs'
 
 interface Tab {
   title: string
@@ -14,7 +15,6 @@ const tabs: Tab[] = [
 
 export const Searcher: React.FC<SearcherProps> = ({
   setCategories,
-  searchValue,
   setSearchValue,
 }) => {
   const [activeTabs, setActiveTabs] = useState<Tab[]>(tabs)
@@ -28,16 +28,28 @@ export const Searcher: React.FC<SearcherProps> = ({
     setActiveTabs(updatedTabs)
   }
 
+  const placeholders = [
+    'Que Blogs te gustaria ver?',
+    'hay algun lugar que quieras conocer?',
+    'Que lenguaje de programacion utilizas?',
+    'Cada cuanto escribes?',
+    'Mantienes tus pensamientos en orden?',
+    'Que es lo que esperas leer?',
+  ]
+
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    console.log('submitted')
+  }
+
   return (
-    <section className=" mx-auto flex w-full flex-col place-content-between items-center gap-1 font-textSegundary  text-base  font-normal md:text-lg lg:flex-row ">
-      <input
-        className="input w-full rounded-full border-2 border-segundary bg-transparent focus-visible:border-tertiary focus-visible:outline-none dark:border-segundaryDark dark:focus-visible:border-segundary "
-        type="text"
-        value={searchValue}
-        placeholder="Que idea te llama la atención"
+    <section className=" mx-auto flex w-full flex-col place-content-between items-center gap-1 font-textSegundary text-base font-normal md:text-lg lg:flex-row ">
+      <PlaceholdersAndVanishInput
+        placeholders={placeholders}
         onChange={(event) =>
           setSearchValue(event.target.value.toLocaleLowerCase())
         }
+        onSubmit={onSubmit}
       />
 
       <div

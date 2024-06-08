@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const ContentPages = () => {
   return (
-    <section className="grid gap-2">
+    <section className="grid gap-2 pb-2">
       <article className="flex flex-col items-center gap-2 xl:flex-row">
         <section className="grid justify-items-start gap-2">
           <h2 className="justify-self-center font-titleSubtitle text-3xl font-semibold md:text-4xl">

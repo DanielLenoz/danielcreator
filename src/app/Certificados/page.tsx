@@ -1,6 +1,7 @@
 import { supabase } from 'app/supabase/client'
 import { Metadata } from 'next'
 import { CertificateSections } from 'app/components/certificados/CertificateSections'
+import { SparklesCore } from 'app/components/aceternityUI/sparkles'
 
 export const metadata: Metadata = {
   title: 'DanielCreator: Certificados',
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     'rodriguez',
     'platzi',
     'cursos',
-    'sertificados',
+    'Certificados',
   ],
 }
 
@@ -26,10 +27,24 @@ export default async function Home() {
 
   return (
     <main className="grid  px-2 pb-3 md:px-32">
-      <p className="mb-3 text-center font-titleSubtitle text-3xl font-semibold">
-        la sabiduría es importante pero mas es el entendimiento para entender
-        sabiduría y conomiento, la voluntad es el principio de la creación
-      </p>
+      <div className="relative flex  w-full flex-col items-center justify-center overflow-hidden rounded-md ">
+        <div className="absolute inset-0 h-screen w-full">
+          <SparklesCore
+            id="tsparticlesfullpage"
+            background="transparent"
+            minSize={1}
+            maxSize={5}
+            particleDensity={100}
+            className="h-full w-full"
+            particleColor="#3C7C98"
+          />
+        </div>
+        <p className=" mb-3 text-center font-titleSubtitle text-3xl font-semibold">
+          la sabiduría es importante pero mas es el entendimiento para entender
+          sabiduría y conomiento, la voluntad es el principio de la creación
+        </p>
+      </div>
+
       {Certificates?.map((data) => (
         <>
           <CertificateSections title={data?.title} data={data} />

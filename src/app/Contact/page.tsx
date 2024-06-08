@@ -22,7 +22,7 @@ export default function Contact() {
   return (
     <main className=" grid min-h-[324px] gap-3 bg-gradient-to-b from-cyan-400 to-neutral-100 px-2 py-3 dark:to-primariDark md:px-32">
       <section className="relative z-10 grid gap-3 md:grid-cols-2">
-        <article className="relative grid gap-2 overflow-hidden rounded-lg border-b-4 border-segundaryDark bg-segundary p-1 text-white">
+        <article className="relative grid gap-2 overflow-hidden rounded-lg border-b-4 border-segundaryDark  bg-tertiary p-1 text-white">
           <h1 className=" z-10 font-titleSubtitle text-2xl font-bold  md:text-3xl">
             Contáctame
           </h1>
@@ -36,21 +36,30 @@ export default function Contact() {
             mejor.
           </p>
           <article className="z-10 flex flex-wrap gap-2  justify-self-end">
-            <a href="/" target="_blank">
+            <a
+              href="/"
+              target="_blank"
+              className=" transition ease-in-out hover:scale-125 "
+            >
               <ImDownload2 className=" h-6 w-6 fill-white" />
             </a>
-            <a href="https://github.com/DanielLenoz" target="_blank">
+            <a
+              href="https://github.com/DanielLenoz"
+              target="_blank"
+              className=" transition ease-in-out hover:scale-125 "
+            >
               <RiGithubFill className=" h-6 w-6 fill-white" />
             </a>
             <a
               href="https://www.linkedin.com/in/daniel-steven-rodriguez-verano-417472241/"
               target="_blank"
+              className=" transition ease-in-out hover:scale-125 "
             >
               <RiLinkedinFill className=" h-6 w-6 fill-white" />
             </a>
           </article>
           <Image
-            className="rotate-y-180 absolute right-0 top-0 hidden md:block"
+            className="rotate-y-180 absolute right-0 top-0 hidden md:block "
             src={'/assets/images/services/imagebg.webp'}
             width={300}
             height={530}

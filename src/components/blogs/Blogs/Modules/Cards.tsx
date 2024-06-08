@@ -33,7 +33,9 @@ export const Cards = ({ Blogs }: { Blogs: any[] | null }) => {
               </p>
               <article className=" flex justify-between font-textSegundary text-base font-medium text-segundaryDark dark:text-segundary md:text-lg">
                 <Link href={`/Blogs/${blog.id}`}>Leer mas</Link>
-                <p>{blog.created_at}</p>
+                <time itemProp="datePublished" dateTime={blog.created_at}>
+                  {blog.created_at}
+                </time>
               </article>
             </article>
           </ScrollAnimation>

@@ -23,7 +23,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="flex max-h-8 min-h-8 place-content-between items-center bg-mainBackgraound px-2 dark:bg-primariDark">
+      <header className="relative z-20 flex max-h-8 min-h-8 place-content-between items-center bg-mainBackgraound px-2 dark:bg-primariDark">
         <RiMenuLine
           className="h-6 w-6 cursor-pointer fill-current stroke-1 dark:fill-slate-100"
           onClick={() => setVisibleLeft(true)}

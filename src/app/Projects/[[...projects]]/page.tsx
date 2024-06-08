@@ -5,6 +5,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import { RiGithubFill } from 'react-icons/ri'
 import { CiGlobe } from 'react-icons/ci'
 import { Modules } from 'app/components/shared/Porfolio/Modules'
+import { TracingBeam } from 'app/components/aceternityUI/tracing-beam'
 
 export const metadata: Metadata = {
   title: 'DanielCreator: Proyectos',
@@ -58,55 +59,114 @@ export default async function Projects(props: Projects) {
               alt={project?.title}
               quality={100}
             />
-            <h1 className=" font-titleSubtitle text-2xl font-semibold md:text-4xl">
-              {project.title}
-            </h1>
+            <section className="mb-1 grid gap-2 md:hidden">
+              <h1 className=" font-titleSubtitle text-2xl font-semibold md:text-4xl">
+                {project.title}
+              </h1>
 
-            <section className="flex">
-              {project.imgFrameworks.map((img: { img: string }) => {
-                return (
-                  <Image
-                    className="mr-[-24px] "
-                    key={null}
-                    src={img?.img}
-                    width={60}
-                    height={80}
-                    alt={project?.title}
-                    quality={100}
-                  />
-                )
-              })}
-            </section>
-            <section className="grid gap-1 font-textPrimary text-base font-normal md:text-lg">
-              <MDXRemote source={project.content} />
-            </section>
-            <article className="flex justify-between font-textSegundary text-base font-medium text-segundaryDark md:text-lg dark:text-segundary">
-              <p>{project.hastag}</p>
-              <p>{project.created_at}</p>
-            </article>
+              <section className="flex">
+                {project.imgFrameworks.map((img: { img: string }) => {
+                  return (
+                    <Image
+                      className="mr-[-24px] "
+                      key={null}
+                      src={img?.img}
+                      width={60}
+                      height={80}
+                      alt={project?.title}
+                      quality={100}
+                    />
+                  )
+                })}
+              </section>
+              <section className="grid gap-1 font-textPrimary text-base font-normal md:text-lg">
+                <MDXRemote source={project.content} />
+              </section>
+              <article className="flex justify-between font-textSegundary text-base font-medium text-segundaryDark dark:text-segundary md:text-lg">
+                <p>{project.hastag}</p>
+                <time itemProp="datePublished" dateTime={project.created_at}>
+                  {project.created_at}
+                </time>
+              </article>
 
-            <article className="flex flex-wrap gap-2 font-textPrimary text-base font-medium md:text-lg ">
-              <button className="shadow-lg shadow-gray-500 hover:shadow-tertiary  rounded-2xl bg-segundaryDark px-2 py-1 hover:bg-tertiary">
-                <a
-                  className="flex items-center text-white"
-                  href={project.Links.github}
-                  target="_blank"
-                >
-                  <RiGithubFill className="mr-1 h-6 w-6 fill-white" />
-                  Repositorio
-                </a>
-              </button>
-              <button className="shadow-lg shadow-gray-500 hover:shadow-tertiary rounded-2xl bg-segundaryDark px-2 py-1 hover:bg-tertiary">
-                <a
-                  className="flex items-center text-white"
-                  href={project.Links.website}
-                  target="_blank"
-                >
-                  <CiGlobe className="mr-1 h-6 w-6 fill-white" />
-                  Pagina web
-                </a>
-              </button>
-            </article>
+              <article className="flex flex-wrap gap-2 font-textPrimary text-base font-medium md:text-lg ">
+                <button className="rounded-2xl bg-segundaryDark px-2  py-1 shadow-lg shadow-gray-500 hover:bg-tertiary hover:shadow-tertiary">
+                  <a
+                    className="flex items-center text-white"
+                    href={project.Links.github}
+                    target="_blank"
+                  >
+                    <RiGithubFill className="mr-1 h-6 w-6 fill-white" />
+                    Repositorio
+                  </a>
+                </button>
+                <button className="rounded-2xl bg-segundaryDark px-2 py-1 shadow-lg shadow-gray-500 hover:bg-tertiary hover:shadow-tertiary">
+                  <a
+                    className="flex items-center text-white"
+                    href={project.Links.website}
+                    target="_blank"
+                  >
+                    <CiGlobe className="mr-1 h-6 w-6 fill-white" />
+                    Pagina web
+                  </a>
+                </button>
+              </article>
+            </section>
+            <TracingBeam className=" hidden md:block">
+              <section className="mb-1 grid gap-2 ">
+                <h1 className=" font-titleSubtitle text-2xl font-semibold md:text-4xl">
+                  {project.title}
+                </h1>
+
+                <section className="flex">
+                  {project.imgFrameworks.map((img: { img: string }) => {
+                    return (
+                      <Image
+                        className="mr-[-24px] "
+                        key={null}
+                        src={img?.img}
+                        width={60}
+                        height={80}
+                        alt={project?.title}
+                        quality={100}
+                      />
+                    )
+                  })}
+                </section>
+                <section className="grid gap-1 font-textPrimary text-base font-normal md:text-lg">
+                  <MDXRemote source={project.content} />
+                </section>
+                <article className="flex justify-between font-textSegundary text-base font-medium text-segundaryDark dark:text-segundary md:text-lg">
+                  <p>{project.hastag}</p>
+                  <time itemProp="datePublished" dateTime={project.created_at}>
+                    {project.created_at}
+                  </time>
+                </article>
+
+                <article className="flex flex-wrap gap-2 font-textPrimary text-base font-medium md:text-lg ">
+                  <button className="rounded-2xl bg-segundaryDark px-2  py-1 shadow-lg shadow-gray-500 hover:bg-tertiary hover:shadow-tertiary">
+                    <a
+                      className="flex items-center text-white"
+                      href={project.Links.github}
+                      target="_blank"
+                    >
+                      <RiGithubFill className="mr-1 h-6 w-6 fill-white" />
+                      Repositorio
+                    </a>
+                  </button>
+                  <button className="rounded-2xl bg-segundaryDark px-2 py-1 shadow-lg shadow-gray-500 hover:bg-tertiary hover:shadow-tertiary">
+                    <a
+                      className="flex items-center text-white"
+                      href={project.Links.website}
+                      target="_blank"
+                    >
+                      <CiGlobe className="mr-1 h-6 w-6 fill-white" />
+                      Pagina web
+                    </a>
+                  </button>
+                </article>
+              </section>
+            </TracingBeam>
           </>
         )
       })}

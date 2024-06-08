@@ -2,18 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-strong, span {
-    color: #0E3A4D;
+html {
+  overflow-x: hidden;
 }
-.dark strong, .dark span {
-    color: #99BAC7;
+strong,
+span {
+  color: #0e3a4d;
+}
+.dark strong,
+.dark span {
+  color: #99bac7;
 }
 .rotate-y-180 {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-*{
-    scrollbar-color: #99BAC7 transparent;
-    scrollbar-width: thin;
-    
+* {
+  scrollbar-color: #99bac7 transparent;
+  scrollbar-width: thin;
 }
