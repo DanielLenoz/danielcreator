@@ -52,7 +52,6 @@ export default async function Projects(props: Projects) {
             />
             <Image
               className="hidden md:block"
-              key={project.id}
               src={project.img?.full}
               width={1200}
               height={320}
