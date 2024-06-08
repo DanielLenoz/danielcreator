@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DanielCreator
 
-## Getting Started
+<img align="center" alt="Tu Nombre" width="100%" src="https://github.com/DanielLenoz/DanielLenoz-portafolioV3/assets/98136538/7925c142-9ac9-45ed-9f53-b6d034d84a21">
 
-First, run the development server:
+___
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+¡Hola! Soy **Daniel**, un apasionado desarrollador web y diseñador de Bogotá, Colombia. Mi objetivo es crear experiencias digitales excepcionales que combinen funcionalidad, estética y rendimiento.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Mi Trayectoria del proyecto DanielCreator
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Portafolio Personal**: Durante años, he estado construyendo mi portafolio personal para mostrar mis habilidades, proyectos y logros. Sin embargo, sentí que podía llevarlo al siguiente nivel.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Unión con el Blog**: La idea de fusionar mi portafolio con un blog surgió. Así nació **DanielCreator**, una plataforma que combina lo mejor de ambos mundos.
 
-## Learn More
+## Características Destacadas
 
-To learn more about Next.js, take a look at the following resources:
+1. **Portafolio Mejorado**: DanielCreator es una versión mejorada de mi portafolio personal. Aquí encontrarás detalles sobre mis habilidades técnicas, proyectos anteriores y logros profesionales.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Blog Integrado**: El blog ahora forma parte integral de DanielCreator. Utilicé **Supabase**, un servicio Backend as a Service (BaaS), para gestionar la base de datos. Adiós a los archivos `.json` desordenados; ahora todo está estructurado y accesible.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. **Diseño Renovado**: Cambié la paleta de colores y actualicé el logotipo original para darle un aspecto fresco y moderno. Además, implementé un **modo oscuro** para una experiencia visual agradable.
 
-## Deploy on Vercel
+4. **Servicios Adicionales**: Además de las características de un portafolio y un blog, DanielCreator también ofrece un resumen de los servicios que ofrezco como freelancer. Esto incluye la creación de **landing pages** y **páginas dinámicas**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. **Herramientas Utilizadas**:
+   - **Figma**: Diseñé la interfaz de usuario utilizando la última versión de Figma.
+   - **Next.js**: La base del proyecto, que permite crear aplicaciones web rápidas y escalables.
+   - **Tailwind CSS**: Estilicé los componentes con esta biblioteca para lograr un diseño limpio y eficiente.
+   - **Supabase**: La elección perfecta para gestionar la base de datos y la lógica del backend.
+   - **Otras Librerías y Comunidades**: Incorporé animaciones y elementos de diseño de la comunidad para mejorar la experiencia del usuario.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+6. **El Camino de DanielCreator**: No es solo una página estática olvidada en el tiempo. Es el lugar donde comparto mi aprendizaje y progreso de manera profesional. A medida que mejoro mis habilidades, no solo se reflejarán en otros proyectos que estarán en mi portafolio, sino que también se verán de alguna u otra manera en **DanielCreator**.
+
+## Instalación y Uso
+
+1. Clona este repositorio.
+2. Ejecuta `npm install` para instalar las dependencias.
+3. Personaliza el contenido en los archivos correspondientes.
+4. ¡Explora DanielCreator y comparte tus comentarios!
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Si deseas mejorar el proyecto, sigue estos pasos:
+
+1. Fork este repositorio.
+2. Crea una rama para tu nueva función: `git checkout -b nueva-funcion`
+3. Realiza los cambios necesarios y realiza commit: `git commit -am 'Agregar nueva función'`
+4. Push a la rama: `git push origin nueva-funcion`
+5. Abre un Pull Request en este repositorio.
+
+## Contacto
+
+Si deseas colaborar en un proyecto o simplemente charlar sobre tecnología, no dudes en **contactarme**. ¡Estoy emocionado por lo que el futuro tiene reservado!
+
+## Autor
+
+- Daniel Steven Rodriguez Verano
+- Sitio web: [DanielCreator](https://daniellenoz.github.io/DanielLenoz-portafolioV3/)
+- Contacto sugerido: [Linkedin](https://www.linkedin.com/in/daniel-steven-rodriguez-verano-417472241/)
+
+## Licencia
+
+Este proyecto se encuentra bajo la Licencia [MIT](LICENSE).
