@@ -47,7 +47,7 @@ export default async function Home() {
 
       {Certificates?.map((data) => (
         <>
-          <CertificateSections title={data?.title} data={data} />
+          <CertificateSections key={data?.title} title={data?.title} data={data} />
         </>
       ))}
     </main>

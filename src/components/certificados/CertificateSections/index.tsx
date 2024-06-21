@@ -51,7 +51,7 @@ export const CertificateSections: React.FC<CertificateSectionsProps> = ({
               className=" h-auto w-auto"
               src={img}
               alt={alt}
-              width={390}
+              width={290}
               height={240}
               quality={100}
             />
