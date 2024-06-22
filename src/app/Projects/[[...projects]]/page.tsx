@@ -41,17 +41,17 @@ export default async function Projects(props: Projects) {
       {filterProjects?.map((project) => {
         return (
           <>
-            {/* <Image
-              className=" md:hidden"
+            <Image
+              className="block sm:hidden"
               key={project.id}
               src={project.img?.small}
               width={1200}
               height={320}
               alt={project?.title}
               quality={100}
-            /> */}
+            />
             <Image
-              className=""
+              className="hidden sm:block"
               src={project.img?.full}
               width={1200}
               height={320}
