@@ -41,7 +41,7 @@ export default async function Projects(props: Projects) {
       {filterProjects?.map((project) => {
         return (
           <>
-            <Image
+            {/* <Image
               className=" md:hidden"
               key={project.id}
               src={project.img?.small}
@@ -49,22 +49,23 @@ export default async function Projects(props: Projects) {
               height={320}
               alt={project?.title}
               quality={100}
-            />
+            /> */}
             <Image
-              className="hidden md:block"
+              className=""
               src={project.img?.full}
               width={1200}
               height={320}
               alt={project?.title}
               quality={100}
             />
+
             <section className="mb-1 grid gap-2 md:hidden">
               <h1 className=" font-titleSubtitle text-2xl font-semibold md:text-4xl">
                 {project.title}
               </h1>
 
               <section className="flex">
-                {project.imgFrameworks.map((img: { img: string }) => {
+                {project.imgFrameworks.map((img: any) => {
                   return (
                     <Image
                       className="mr-[-24px] "
@@ -118,7 +119,7 @@ export default async function Projects(props: Projects) {
                 </h1>
 
                 <section className="flex">
-                  {project.imgFrameworks.map((img: { img: string }) => {
+                  {project.imgFrameworks.map((img: any) => {
                     return (
                       <Image
                         className="mr-[-24px] "
