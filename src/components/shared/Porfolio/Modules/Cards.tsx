@@ -5,33 +5,33 @@ import { RiGithubFill } from 'react-icons/ri'
 import ScrollAnimation from 'react-animate-on-scroll'
 import 'animate.css/animate.compat.css'
 
-export const Cards = ({ projects }: { projects: any[] | null }) => {
+export const Cards = ({ Works }: { Works: any[] | null }) => {
   return (
     <section className="flex flex-wrap justify-center gap-2">
-      {projects?.map((projects) => {
+      {Works?.map((Works) => {
         return (
           <ScrollAnimation
-            key={projects.id}
+            key={Works.id}
             animateIn="fadeIn"
             animateOut="fadeOut"
             className=" relative grid max-h-[246] max-w-[390] items-center justify-items-center overflow-hidden rounded-2xl shadow-xl shadow-gray-500 "
           >
             <Image
-              src={projects.img?.small}
+              src={Works.img?.small}
               width={400}
               height={300}
-              alt={projects?.title}
+              alt={Works?.title}
               quality={100}
             />
 
             <article className=" absolute grid max-w-60 gap-2 rounded-2xl bg-mygradiente p-2 sm:max-w-80">
               <h2 className=" text-center font-titleSubtitle text-2xl font-semibold text-black md:text-3xl">
-                {projects.title}
+                {Works.title}
               </h2>
               <button>
                 <Link
                   className="rounded-lg bg-segundaryDark px-2 py-1 text-center font-textPrimary text-base font-medium text-white hover:bg-tertiary md:text-lg"
-                  href={`/Projects/${projects.id}`}
+                  href={`/Works/${Works.id}`}
                 >
                   Mas Información
                 </Link>
@@ -41,7 +41,7 @@ export const Cards = ({ projects }: { projects: any[] | null }) => {
               <div className="group absolute -bottom-[10px] -left-[10px] grid items-center justify-items-center">
                 <a
                   className=" z-10 grid h-9 w-9 items-center justify-center rounded-full  bg-mygradiente"
-                  href={projects.Links?.github}
+                  href={Works.Links?.github}
                   target="_blank"
                 >
                   <RiGithubFill className="h-6 w-6 fill-segundaryDark" />
@@ -51,7 +51,7 @@ export const Cards = ({ projects }: { projects: any[] | null }) => {
               <div className="group absolute -bottom-[10px] -right-[10px] grid items-center justify-items-center">
                 <a
                   className=" z-10 grid h-9 w-9 items-center justify-center rounded-full  bg-mygradiente"
-                  href={projects.Links?.website}
+                  href={Works.Links?.website}
                   target="_blank"
                 >
                   <CiGlobe className="h-6 w-6 fill-segundaryDark" />

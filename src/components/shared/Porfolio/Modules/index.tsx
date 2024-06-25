@@ -14,18 +14,19 @@ export interface SearcherProps {
 export const Modules = () => {
   const [categories, setCategories] = useState<string>('todos')
   const [searchValue, setSearchValue] = useState<string>('')
-  const [filteredProjects, setFilteredProjects] = useState<DataType[]>([])
+  const [filteredWorks, setFilteredWorks] = useState<DataType[]>([])
 
   useEffect(() => {
-    const filterProjects = async () => {
+    const filterWorks = async () => {
       // Obtén los datos de la API
-      let { data: Projects, error } = await supabase
-        .from('Projects')
+      let { data: Works, error } = await supabase
+        .from('Works')
         .select('*')
+      console.log(Works)
 
-      if (Projects) {
+      if (Works) {
         // Filtra los datos según categories y searchValue
-        const filtered = Projects.filter((project) => {
+        const filtered = Works.filter((project) => {
           const titleLower = project.title?.toLowerCase() || ''
           const category = project.category?.toLowerCase() || ''
 
@@ -39,13 +40,13 @@ export const Modules = () => {
             )
           }
         })
-        setFilteredProjects(filtered)
+        setFilteredWorks(filtered)
       } else if (error) {
         console.error(error)
       }
     }
 
-    filterProjects()
+    filterWorks()
   }, [categories, searchValue])
 
   return (
@@ -55,7 +56,7 @@ export const Modules = () => {
         searchValue={searchValue}
         setSearchValue={setSearchValue}
       />
-      <Cards projects={filteredProjects} />
+      <Cards Works={filteredWorks} />
     </>
   )
 }
