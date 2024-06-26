@@ -37,7 +37,7 @@ export default function Contact() {
           </p>
           <article className="z-10 flex flex-wrap gap-2  justify-self-end">
             <a
-              href="/"
+              href="https://drive.google.com/file/d/1afpRDN5QE40RhCR1QP371MPEzobYQoEX/view?usp=sharing"
               target="_blank"
               className=" transition ease-in-out hover:scale-125 "
             >
