@@ -59,7 +59,7 @@ export default function Contact() {
             </a>
           </article>
           <Image
-            className="rotate-y-180 absolute right-0 top-0 hidden md:block "
+            className="absolute right-0 top-0 "
             src={'/assets/images/services/imagebg.webp'}
             width={300}
             height={530}

@@ -31,18 +31,10 @@ interface Works {
 }
 
 export default async function Works(props: Works) {
-  console.log(props)
   const { works } = props.params
   let { data: Works, error } = await supabase.from('Works').select('*')
-  // let { data: Works, error } = await supabase
-  // .from('Works')
-  // .select('*')
-  console.log(Works)
-  console.log(error)
-  console.log('hola')
 
   const filterWorks = Works?.filter((data: any) => data.id == works)
-  console.log(filterWorks)
 
   return (
     <main className="grid gap-3 px-2 pb-2 md:px-32">

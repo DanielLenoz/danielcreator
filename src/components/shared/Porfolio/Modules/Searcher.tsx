@@ -21,7 +21,6 @@ export const Searcher: React.FC<SearcherProps> = ({
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log('submitted')
   }
 
   return (

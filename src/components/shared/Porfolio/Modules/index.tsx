@@ -19,10 +19,7 @@ export const Modules = () => {
   useEffect(() => {
     const filterWorks = async () => {
       // Obtén los datos de la API
-      let { data: Works, error } = await supabase
-        .from('Works')
-        .select('*')
-      console.log(Works)
+      let { data: Works, error } = await supabase.from('Works').select('*')
 
       if (Works) {
         // Filtra los datos según categories y searchValue
