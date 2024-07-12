@@ -16,10 +16,10 @@ const slugs = [
   'figma',
   'tailwindcss',
   'vite',
-  'windowsterminal',
+  'iterm2',
   'npm',
   'supabase',
-  'windows',
+  'gitforwindows',
 ]
 
 export function CloudBalloon() {

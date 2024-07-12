@@ -47,7 +47,7 @@ export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
     bgHex,
     fallbackHex,
     minContrastRatio,
-    size: 42,
+    size: 60,
     aProps: {
       href: undefined,
       target: undefined,

@@ -43,10 +43,10 @@ export const HomePage = () => {
           disableOnInteraction: false,
         }}
         modules={[Keyboard, Pagination, Navigation, Autoplay]}
-        className="mySwiper mb-3 w-full"
+        className="mySwiper mb-3 w-full shadow"
       >
         {blogs?.map((blog: any) => (
-          <SwiperSlide className="object-cover" key={blog.title}>
+          <SwiperSlide className="object-cover shadow" key={blog.title}>
             <article className=" relative grid place-items-center">
               <Image
                 className="max-h-[400px] object-cover sm:hidden"

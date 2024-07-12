@@ -77,8 +77,8 @@ export const Header = () => {
               ? '/assets/icons/logo-white.svg'
               : '/assets/icons/logo-black.svg'
           }
-          width={200}
-          height={200}
+          width={180}
+          height={100}
           alt="Logo de la empresa"
           quality={100}
         />
