@@ -20,16 +20,14 @@ ___
 
 3. **Diseño Renovado**: Cambié la paleta de colores y actualicé el logotipo original para darle un aspecto fresco y moderno. Además, implementé un **modo oscuro** para una experiencia visual agradable.
 
-4. **Servicios Adicionales**: Además de las características de un portafolio y un blog, DanielCreator también ofrece un resumen de los servicios que ofrezco como freelancer. Esto incluye la creación de **landing pages** y **páginas dinámicas**.
-
-5. **Herramientas Utilizadas**:
+4. **Herramientas Utilizadas**:
    - **Figma**: Diseñé la interfaz de usuario utilizando la última versión de Figma.
    - **Next.js**: La base del proyecto, que permite crear aplicaciones web rápidas y escalables.
    - **Tailwind CSS**: Estilicé los componentes con esta biblioteca para lograr un diseño limpio y eficiente.
    - **Supabase**: La elección perfecta para gestionar la base de datos y la lógica del backend.
    - **Otras Librerías y Comunidades**: Incorporé animaciones y elementos de diseño de la comunidad para mejorar la experiencia del usuario.
 
-6. **El Camino de DanielCreator**: No es solo una página estática olvidada en el tiempo. Es el lugar donde comparto mi aprendizaje y progreso de manera profesional. A medida que mejoro mis habilidades, no solo se reflejarán en otros proyectos que estarán en mi portafolio, sino que también se verán de alguna u otra manera en **DanielCreator**.
+5. **El Camino de DanielCreator**: No es solo una página estática olvidada en el tiempo. Es el lugar donde comparto mi aprendizaje y progreso de manera profesional. A medida que mejoro mis habilidades, no solo se reflejarán en otros proyectos que estarán en mi portafolio, sino que también se verán de alguna u otra manera en **DanielCreator**.
 
 ## Instalación y Uso
 
