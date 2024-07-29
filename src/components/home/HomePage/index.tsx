@@ -2,10 +2,12 @@ import { Vortex } from 'app/components/aceternityUI/vortex'
 import BoxReveal from 'app/components/magicUI/box-reveal'
 import Image from 'next/image'
 import Link from 'next/link'
+import { ImDownload2 } from 'react-icons/im'
+import { RiGithubFill, RiLinkedinFill } from 'react-icons/ri'
 
 export const HomePage = async () => {
   return (
-    <section className="relative grid max-h-[525px] overflow-hidden bg-gradient-to-b from-cyan-400 to-neutral-100 dark:to-primariDark shadow">
+    <section className="relative grid max-h-[525px] overflow-hidden bg-gradient-to-b from-cyan-400 to-neutral-100 shadow dark:to-primariDark">
       <Vortex
         backgroundColor="#00000000"
         rangeY={800}
@@ -23,14 +25,14 @@ export const HomePage = async () => {
           quality={100}
         />
         <Image
-          className=" absolute top-5 md:left-28 sm:top-0"
+          className=" absolute top-5 sm:top-0 md:left-28"
           src="/assets/images/person/face.webp"
           alt="daniel rodriguez"
           width={360}
           height={360}
           quality={100}
         />
-        <section className=" z-10 grid min-h-[400px] max-w-[604px] justify-items-start gap-2 justify-self-end bg-mygradiente p-2 md:w-2/3 sm:w-1/2 lg:pr-36 ">
+        <section className=" z-10 grid min-h-[400px] max-w-[604px] justify-items-start gap-2 justify-self-end bg-mygradiente p-2 sm:w-1/2 md:w-2/3 lg:pr-36 ">
           <BoxReveal boxColor={'#0E3A4D'} duration={0.5}>
             <p className="rounded-lg bg-mygradiente p-1 font-titleSubtitle text-4xl font-bold">
               Frontend Developer / Designer UI/UX
@@ -47,14 +49,29 @@ export const HomePage = async () => {
             </p>
           </BoxReveal>
           <BoxReveal boxColor={'#0E3A4D'} duration={0.5}>
-            <button>
-              <Link
-                className="inline-block rounded-lg bg-segundaryDark px-2 py-1 font-textPrimary  text-base font-medium text-white shadow-lg shadow-gray-500 hover:bg-tertiary hover:shadow-tertiary md:text-lg"
-                href={'/Contact'}
+            <article className="z-10 flex flex-wrap gap-2 px-2">
+              <a
+                href="https://drive.google.com/file/d/1afpRDN5QE40RhCR1QP371MPEzobYQoEX/view?usp=sharing"
+                target="_blank"
+                className=" transition ease-in-out hover:scale-125 "
               >
-                Contacto
-              </Link>
-            </button>
+                <ImDownload2 className=" h-6 w-6 fill-black dark:fill-white" />
+              </a>
+              <a
+                href="https://github.com/DanielLenoz"
+                target="_blank"
+                className=" transition ease-in-out hover:scale-125 "
+              >
+                <RiGithubFill className=" h-6 w-6 fill-black dark:fill-white" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/daniel-steven-rodriguez-verano-417472241/"
+                target="_blank"
+                className=" transition ease-in-out hover:scale-125 "
+              >
+                <RiLinkedinFill className=" h-6 w-6 fill-black dark:fill-white" />
+              </a>
+            </article>
           </BoxReveal>
         </section>
       </Vortex>

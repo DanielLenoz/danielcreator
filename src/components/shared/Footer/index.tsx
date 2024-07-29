@@ -1,96 +1,55 @@
+import { Contacto } from 'app/components/contacto/Contacto'
 import Image from 'next/image'
 import Link from 'next/link'
+import { ImDownload2 } from 'react-icons/im'
+import { RiGithubFill, RiLinkedinFill } from 'react-icons/ri'
 
 export const Footer = () => {
   return (
-    <footer className=" grid justify-items-center gap-2 bg-footerBlack px-3 py-2 text-white md:px-32 lg:grid-flow-col">
+    <footer className=" grid justify-center justify-items-center gap-2 bg-footerBlack px-3 py-2 text-white md:px-32 lg:grid-flow-col">
       <aside className=" grid justify-items-center">
         <Image
           src="/assets/icons/logo-footer.webp"
-          width={228}
-          height={255}
+          width={220}
+          height={220}
           alt="Logo de la empresa"
           quality={100}
         />
-        <p className=' font-textSegundary font-light text-center text-xs'>© 2024 DanielCreator.com <br /> Todos los derechos reservados.</p>
+        <p className=" text-center font-textSegundary text-xs font-light">
+          © 2024 DanielCreator.com <br /> Todos los derechos reservados.
+        </p>
       </aside>
       <div className="h-[1px] w-full bg-slate-400 md:h-full md:w-[1px]"></div>
-      <section className="grid gap-2 md:grid-flow-col lg:gap-5 xl:gap-7">
-        <nav className="flex flex-col gap-1">
-          <h6 className="font-titleSubtitle text-2xl font-semibold">HOME</h6>
-          <Link
-            href={'/'}
-            className="link-hover font-textPrimary text-base font-medium"
+      <section className="grid items-center justify-items-center gap-2 lg:flex">
+        <article className="z-10 flex flex-row gap-2 lg:flex-col">
+          <a
+            href="https://drive.google.com/file/d/1afpRDN5QE40RhCR1QP371MPEzobYQoEX/view?usp=sharing"
+            target="_blank"
+            className=" transition ease-in-out hover:scale-125 "
           >
-            Home
-          </Link>
-          <Link
-            href={'/Servicios'}
-            className="link-hover font-textPrimary text-base font-medium"
-          >
-            Servicios
-          </Link>
-          <Link
-            href={'/Certificados'}
-            className="link-hover font-textPrimary text-base font-medium"
-          >
-            Certificados
-          </Link>
-          <Link
-            href={'/Blogs'}
-            className="link-hover font-textPrimary text-base font-medium"
-          >
-            Blogs
-          </Link>
-        </nav>
-        <nav className="flex flex-col gap-1">
-          <h6 className="font-titleSubtitle text-2xl font-semibold">
-            SERVICIOS
-          </h6>
-          <a className="link-hover font-textPrimary text-base font-medium">
-            Marca
+            <ImDownload2 className=" h-6 w-6 fill-white" />
           </a>
-          <a className="link-hover font-textPrimary text-base font-medium">
-            Diseño
-          </a>
-          <a className="link-hover font-textPrimary text-base font-medium">
-            Landing pages
-          </a>
-          <a className="link-hover font-textPrimary text-base font-medium">
-            Dynamic pages web
-          </a>
-        </nav>
-        <nav className="flex flex-col gap-1">
-          <h6 className="font-titleSubtitle text-2xl font-semibold">Legal</h6>
-          <Link
-            href={'/TerminosUso'}
-            className="link-hover font-textPrimary text-base font-medium"
+          <a
+            href="https://github.com/DanielLenoz"
+            target="_blank"
+            className=" transition ease-in-out hover:scale-125 "
           >
-            Terminos de uso
-          </Link>
-          <a className="link-hover font-textPrimary text-base font-medium">
-            Contratos
+            <RiGithubFill className=" h-6 w-6 fill-white" />
           </a>
-        </nav>
-        <nav className="flex flex-col gap-1">
-          <h6 className="font-titleSubtitle text-2xl font-semibold">
-            CONTACTO
-          </h6>
-          <Link
-            href={'https://github.com/DanielLenoz'}
-            className="link-hover font-textPrimary text-base font-medium"
+          <a
+            href="https://www.linkedin.com/in/daniel-steven-rodriguez-verano-417472241/"
+            target="_blank"
+            className=" transition ease-in-out hover:scale-125 "
           >
-            Github
-          </Link>
-          <Link
-            href={
-              'https://www.linkedin.com/in/daniel-steven-rodriguez-verano-417472241/'
-            }
-            className="link-hover font-textPrimary text-base font-medium"
-          >
-            Linkedin
-          </Link>
-        </nav>
+            <RiLinkedinFill className=" h-6 w-6 fill-white" />
+          </a>
+        </article>
+        <section className="grid items-start">
+          <h1 className=" font-titleSubtitle text-2xl font-bold  md:text-3xl">
+            Envíame un correo.
+          </h1>
+          <Contacto />
+        </section>
       </section>
     </footer>
   )

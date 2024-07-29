@@ -39,7 +39,7 @@ export const Contacto: React.FC = () => {
 
   return (
     <form
-      className="grid h-[88%] gap-1 rounded-lg border-b-4 border-segundaryDark bg-mygradiente pt-1 font-textPrimary text-base font-normal md:text-lg"
+      className="grid h-[88%] w-full min-w-64 gap-1 rounded-lg border-b-4 border-segundaryDark bg-mygradiente pt-1 font-textPrimary text-base font-normal md:min-w-[500px] md:text-lg"
       ref={form}
       onSubmit={sendEmail}
     >
@@ -71,7 +71,7 @@ export const Contacto: React.FC = () => {
         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
       />
       <input
-        className="mb-1 mt-3 w-1/2 cursor-pointer justify-self-center rounded-lg bg-segundaryDark py-1 font-medium text-white shadow-lg shadow-gray-500 hover:bg-tertiary hover:shadow-tertiary"
+        className=" w-full cursor-pointer justify-self-center rounded-lg bg-segundaryDark py-1 font-medium text-white shadow-lg shadow-gray-500 hover:bg-tertiary hover:shadow-tertiary"
         type="submit"
         value="Enviar Correo"
       />
