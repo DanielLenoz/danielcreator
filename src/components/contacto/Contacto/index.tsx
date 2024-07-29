@@ -39,12 +39,12 @@ export const Contacto: React.FC = () => {
 
   return (
     <form
-      className="grid h-[88%] w-full min-w-64 gap-1 rounded-lg border-b-4 border-segundaryDark bg-mygradiente pt-1 font-textPrimary text-base font-normal md:min-w-[500px] md:text-lg"
+      className="grid h-[88%] w-full min-w-64 gap-1 rounded-lg border-b-4 border-segundaryDark bg-segundary pt-1 font-textPrimary text-base font-normal text-white md:min-w-[500px] md:text-lg"
       ref={form}
       onSubmit={sendEmail}
     >
       <input
-        className="rounded-lg border-b-2 border-segundaryDark bg-transparent px-1 focus:border-tertiary focus-visible:outline-none dark:placeholder-slate-50"
+        className="rounded-lg border-b-2 border-segundaryDark bg-transparent px-1 placeholder-slate-100 placeholder:italic focus:border-tertiary focus-visible:outline-none"
         placeholder="Tu nombre"
         type="text"
         name="user_name"
@@ -54,7 +54,7 @@ export const Contacto: React.FC = () => {
         }
       />
       <input
-        className="rounded-lg border-b-2 border-segundaryDark bg-transparent px-1 focus:border-tertiary focus-visible:outline-none dark:placeholder-slate-50"
+        className="rounded-lg border-b-2 border-segundaryDark bg-transparent px-1 placeholder-slate-100 placeholder:italic focus:border-tertiary focus-visible:outline-none"
         placeholder="Tu Correo"
         type="email"
         name="user_email"
@@ -64,7 +64,7 @@ export const Contacto: React.FC = () => {
         }
       />
       <textarea
-        className="min-h-28 rounded-lg border-b-2 border-segundaryDark bg-transparent px-1 focus:border-tertiary focus-visible:outline-none dark:placeholder-slate-50"
+        className="min-h-28 rounded-lg border-b-2 border-segundaryDark bg-transparent px-1 placeholder-slate-100 placeholder:italic focus:border-tertiary focus-visible:outline-none"
         placeholder="Que me quieres decir "
         name="message"
         value={formData.message}
