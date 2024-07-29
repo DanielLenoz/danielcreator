@@ -1,7 +1,6 @@
 import { Vortex } from 'app/components/aceternityUI/vortex'
 import BoxReveal from 'app/components/magicUI/box-reveal'
 import Image from 'next/image'
-import Link from 'next/link'
 import { ImDownload2 } from 'react-icons/im'
 import { RiGithubFill, RiLinkedinFill } from 'react-icons/ri'
 

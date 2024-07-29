@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import { GoHomeFill } from 'react-icons/go'
 import { MdLibraryBooks } from 'react-icons/md'
-import { PiShareNetworkFill } from 'react-icons/pi'
-import { RiShakeHandsFill, RiVerifiedBadgeFill } from 'react-icons/ri'
+import { RiVerifiedBadgeFill } from 'react-icons/ri'
 
 export const Routes = ({ setVisibleLeft }: any) => {
   const navLinks = [
@@ -10,11 +9,6 @@ export const Routes = ({ setVisibleLeft }: any) => {
       href: '/',
       icon: <GoHomeFill />,
       text: 'Home',
-    },
-    {
-      href: '/Servicios',
-      icon: <RiShakeHandsFill />,
-      text: 'Servicios',
     },
     {
       href: '/Certificados',
@@ -25,11 +19,6 @@ export const Routes = ({ setVisibleLeft }: any) => {
       href: '/Blogs',
       icon: <MdLibraryBooks />,
       text: 'Blogs',
-    },
-    {
-      href: '/Contact',
-      icon: <PiShareNetworkFill />,
-      text: 'Redes/Contact',
     },
   ]
 

@@ -1,6 +1,5 @@
 import { Contacto } from 'app/components/contacto/Contacto'
 import Image from 'next/image'
-import Link from 'next/link'
 import { ImDownload2 } from 'react-icons/im'
 import { RiGithubFill, RiLinkedinFill } from 'react-icons/ri'
 
