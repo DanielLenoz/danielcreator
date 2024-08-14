@@ -35,7 +35,34 @@ export const Header = () => {
 
   return (
     <>
-      <header className="relative z-20 flex max-h-8 min-h-8 place-content-between items-center bg-mainBackgraound px-2 dark:bg-primariDark">
+      <header className="relative z-20 hidden max-h-8 min-h-8 place-content-between items-center bg-mainBackgraound px-2 dark:bg-primariDark sm:flex">
+        <Image
+          src={
+            darkTheme
+              ? '/assets/icons/logo-white.svg'
+              : '/assets/icons/logo-black.svg'
+          }
+          width={150}
+          height={100}
+          alt="Logo de la empresa"
+          quality={100}
+        />
+        <ul className="flex gap-3 font-titleSubtitle text-2xl font-semibold">
+          <Routes desktop={true} />
+        </ul>
+        <label className="swap swap-rotate">
+          <input type="checkbox" />
+          <RiMoonFill
+            className="swap-on  h-6 w-6 fill-current dark:fill-slate-100"
+            onClick={toggleTheme}
+          />
+          <RiSunFill
+            className="swap-off h-6 w-6 fill-current dark:fill-slate-100  "
+            onClick={toggleTheme}
+          />
+        </label>
+      </header>
+      <header className="relative z-20 flex max-h-8 min-h-8 place-content-between items-center bg-mainBackgraound px-2 dark:bg-primariDark sm:hidden">
         <RiMenuLine
           className="h-6 w-6 cursor-pointer fill-current stroke-1 dark:fill-slate-100"
           onClick={() => setVisibleLeft(true)}

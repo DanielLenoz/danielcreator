@@ -3,7 +3,7 @@ import { GoHomeFill } from 'react-icons/go'
 import { MdLibraryBooks } from 'react-icons/md'
 import { RiVerifiedBadgeFill } from 'react-icons/ri'
 
-export const Routes = ({ setVisibleLeft }: any) => {
+export const Routes = ({ setVisibleLeft, desktop }: any) => {
   const navLinks = [
     {
       href: '/',
@@ -31,7 +31,7 @@ export const Routes = ({ setVisibleLeft }: any) => {
             href={href}
             onClick={() => setVisibleLeft(false)}
           >
-            {icon}
+            {desktop ? true : icon}
             {text}
           </Link>
         </li>
