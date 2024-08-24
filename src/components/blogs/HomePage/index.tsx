@@ -69,7 +69,9 @@ export const HomePage = () => {
                   {blog.title}
                 </h1>
                 <button className=" rounded-2xl bg-segundaryDark px-4 py-1 font-textSegundary text-base font-medium text-white hover:bg-tertiary md:text-lg">
-                  <Link href={`/Blogs/${blog.id}`}>Leer mas</Link>
+                  <Link href={`/Blogs/${encodeURIComponent(blog.title)}`}>
+                    Leer mas
+                  </Link>
                 </button>
               </article>
             </article>
