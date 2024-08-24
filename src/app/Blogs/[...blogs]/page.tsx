@@ -28,12 +28,15 @@ interface Blogs {
   }
 }
 
-export default async function Projects(props: Blogs) {
+export default async function Blogs(props: Blogs) {
   const { blogs } = props.params
 
+  // Filtrar los blogs por título en lugar de ID
   let { data: Blogs, error } = await supabase.from('Blogs').select('*')
 
-  const filterBlogs = Blogs?.filter((data) => data.id == blogs)
+  const decodedTitle = decodeURIComponent(blogs[0])
+  // Asegúrate de que el título coincida con el título decodificado
+  const filterBlogs = Blogs?.filter((data) => data.title === decodedTitle)
 
   return (
     <main className="grid gap-3 px-2 pb-2 md:px-32">

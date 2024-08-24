@@ -32,7 +32,9 @@ export const Cards = ({ Blogs }: { Blogs: any[] | null }) => {
                 {blog.description}
               </p>
               <article className=" flex justify-between font-textSegundary text-base font-medium text-segundaryDark dark:text-segundary md:text-lg">
-                <Link href={`/Blogs/${blog.id}`}>Leer mas</Link>
+                <Link href={`/Blogs/${encodeURIComponent(blog.title)}`}>
+                  Leer mas
+                </Link>
                 <time itemProp="datePublished" dateTime={blog.created_at}>
                   {blog.created_at}
                 </time>

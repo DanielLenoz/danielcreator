@@ -31,7 +31,7 @@ export const Cards = ({ Works }: { Works: any[] | null }) => {
               <button>
                 <Link
                   className="rounded-lg bg-segundaryDark px-2 py-1 text-center font-textPrimary text-base font-medium text-white hover:bg-tertiary md:text-lg"
-                  href={`/Works/${Works.id}`}
+                  href={`/Works/${encodeURIComponent(Works.title)}`}
                 >
                   Mas Información
                 </Link>
