@@ -19,11 +19,14 @@ export const Modules = () => {
   useEffect(() => {
     const filterWorks = async () => {
       // Obtén los datos de la API
-      let { data: Works, error } = await supabase.from('Works').select('*')
 
-      if (Works) {
+      let { data: Projects, error } = await supabase
+        .from('Projects')
+        .select('*')
+
+      if (Projects) {
         // Filtra los datos según categories y searchValue
-        const filtered = Works.filter((project) => {
+        const filtered = Projects.filter((project) => {
           const titleLower = project.title?.toLowerCase() || ''
           const category = project.category?.toLowerCase() || ''
 

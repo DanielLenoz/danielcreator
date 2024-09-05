@@ -33,11 +33,13 @@ interface Works {
 export default async function Works(props: Works) {
   const { works } = props.params
 
-  let { data: Works, error } = await supabase.from('Works').select('*')
+  let { data: Projects, error } = await supabase.from('Projects').select('*')
 
   const decodedTitle = decodeURIComponent(works[0])
 
-  const filterWorks = Works?.filter((data: any) => data.title == decodedTitle)
+  const filterWorks = Projects?.filter(
+    (data: any) => data.title == decodedTitle,
+  )
 
   return (
     <main className="grid gap-3 px-2 pb-2 md:px-32">
@@ -45,7 +47,7 @@ export default async function Works(props: Works) {
         return (
           <>
             <Image
-              className="block sm:hidden"
+              className="block rounded-2xl sm:hidden"
               key={project.id}
               src={project.img?.small}
               width={1200}
@@ -54,7 +56,7 @@ export default async function Works(props: Works) {
               quality={100}
             />
             <Image
-              className="hidden sm:block"
+              className="hidden rounded-2xl sm:block"
               src={project.img?.full}
               width={1200}
               height={320}
