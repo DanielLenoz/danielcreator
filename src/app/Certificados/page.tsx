@@ -21,8 +21,8 @@ export const metadata: Metadata = {
 }
 
 export default async function Home() {
-  let { data: Certificados, error } = await supabase
-    .from('Certificados')
+  let { data: Certificates, error } = await supabase
+    .from('Certificates')
     .select('*')
   return (
     <main className="grid  px-2 pb-3 md:px-32">
@@ -44,9 +44,13 @@ export default async function Home() {
         </p>
       </div>
 
-      {Certificados?.map((data) => (
+      {Certificates?.map((data) => (
         <>
-          <CertificateSections key={data?.title} title={data?.title} data={data} />
+          <CertificateSections
+            key={data?.title}
+            title={data?.title}
+            data={data}
+          />
         </>
       ))}
     </main>
