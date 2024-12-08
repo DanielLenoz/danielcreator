@@ -15,7 +15,7 @@ export const Footer = () => {
           quality={100}
         />
         <p className=" text-center font-textSegundary text-xs font-light">
-          © 2024 DanielCreator.com <br /> Todos los derechos reservados.
+          © 2024 DanielLenozweb.com <br /> Todos los derechos reservados.
         </p>
       </aside>
       <div className="h-[1px] w-full bg-slate-400 md:h-full md:w-[1px]"></div>
