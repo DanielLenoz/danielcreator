@@ -50,7 +50,7 @@ export const HomePage = async () => {
           <BoxReveal boxColor={'#0E3A4D'} duration={0.5}>
             <article className="z-10 flex flex-wrap gap-2 px-2">
               <a
-                href="https://drive.google.com/file/d/1afpRDN5QE40RhCR1QP371MPEzobYQoEX/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Y_7Wp-IvsjitqIIWxhqmCBK2UUBNBM3t/view?usp=sharing"
                 target="_blank"
                 className=" transition ease-in-out hover:scale-125 "
               >
